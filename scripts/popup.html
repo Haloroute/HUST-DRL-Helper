@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 400px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #checkUrlLabel {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #urlLabel {
+            margin-top: 10px;
+            display: "Url: ";
+        }
+    </style>
+</head>
+<body>
+    <p id="checkUrlLabel">Current URL is <span id="formUrl"></span> URL!</p>
+    <button id="showUrlButton">Show Current URL</button>
+    <p id="urlLabel">Current URL: <span id="currentUrl"></span></p>
+    <button id="reloadButton">Refresh</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
