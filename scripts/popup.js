@@ -1,4 +1,6 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
+    const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/answer.json?token=GHSAT0AAAAAACO6JYX7BRG2XVSBB4II7JNMZPBPPXQ";
+    const startUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=";
     var checkUrlLabel = document.getElementById('checkUrlLabel');
     var checkUrlSpan = document.getElementById('checkUrlSpan');
     var quizLabel = document.getElementById('quizLabel');
@@ -20,12 +22,15 @@
         };
     });
 
-    //showUrlButton.addEventListener('click', function () {
-    //    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    //        var currentTab = tabs[0];
-    //        var url = currentTab.url;
-    //        currentUrlSpan.textContent = url;
-    //        urlLabel.style.display = 'block';
-    //    });
-    //});
+    loadButton.addEventListener('click', function () {
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            var currentTab = tabs[0];
+            if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
+                const answerMap = await fetch(answerUrl).then(answerMap => answerMap.text());
+                var url = currentTab.url;
+                var Id = url.replace(startUrl, "");
+                localStorage.setItem("officeforms.answermap." + Id) = answerMap;
+            }
+        });
+    });
 });
