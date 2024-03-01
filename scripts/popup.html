@@ -26,17 +26,18 @@
             font-weight: bold;
         }
 
-        #urlLabel {
+        #quizLabel {
             margin-top: 10px;
-            display: "Url: ";
+            font-size: 15px;
+            font-weight: bold;
+            display: "Bài thi: ";
         }
     </style>
 </head>
 <body>
-    <p id="checkUrlLabel"><span id="formUrl"></span></p>
-    <button id="showUrlButton">Show Current URL</button>
-    <p id="urlLabel">Current URL: <span id="currentUrl"></span></p>
-    <button id="reloadButton">Refresh</button>
+    <p id="checkUrlLabel"><span id="checkUrlSpan"></span></p>
+    <p id="quizLabel">Bài thi: <span id="quizSpan"></span></p>
+    <button id="loadButton">Tải đáp án</button>
 
     <script src="popup.js"></script>
 </body>
