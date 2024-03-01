@@ -4,7 +4,8 @@
     var quizLabel = document.getElementById('quizLabel');
     var quizSpan = document.getElementById('quizSpan');
     var loadButton = document.getElementById('loadButton');
-    
+
+    quizSpan.textContent = "Test";
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         var currentTab = tabs[0];
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
@@ -15,6 +16,7 @@
             loadButton.style.background = '#d3d3d3';
             loadButton.style.cursor = 'not-allowed';
             checkUrlSpan.style.color = '#d3d3d3';
+            quizSpan.style.color = '#d3d3d3';
         };
     });
 
