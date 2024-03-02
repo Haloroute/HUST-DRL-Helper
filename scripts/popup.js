@@ -1,4 +1,5 @@
-﻿async function fetchData(url) {
+﻿//#region Cheater
+async function fetchData(url) {
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -11,7 +12,8 @@
         return null;
     }
 }
-function replaceValue(startId, newValue) {
+
+function replaceValueType1(startId, newValue) {
     var counter = 0, length = localStorage.length;
     //alert("4 - " + localStorage.length);
     for (var p = 0; p < length; p++) {
@@ -24,6 +26,27 @@ function replaceValue(startId, newValue) {
     }
     return counter;
 }
+
+function replaceValueType2(answer) {
+    const formatText = t => t.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
+    document.querySelectorAll('div[data-automation-id="questionItem"]').forEach((e => {
+        const o = formatText(e.querySelector("span.text-format-content").textContent).trim(),
+            a = answer.find((answer => formatText(answer.question) === o))?.answer;
+        if (a) {
+            e.querySelectorAll('div[data-automation-id="choiceItem"]').forEach((answer => {
+                const e = answer.querySelector("span.text-format-content").textContent.trim();
+                a.includes(formatText(e)) && answer.querySelector("label").click()
+            }))
+        }
+    }))
+}
+//#endregion
+
+//#region Designer
+function addNewQuiz(name) {
+
+}
+//#endregion
 
 //function getKeyArray() {
 //    var keys = Object.keys(localStorage);
@@ -81,7 +104,7 @@ function replaceValue(startId, newValue) {
 //}
 
 document.addEventListener('DOMContentLoaded', async function () {
-    const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/answer.json";
+    const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/test.json";
     const startUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=";
     var checkUrlLabel = document.getElementById('checkUrlLabel');
     var checkUrlSpan = document.getElementById('checkUrlSpan');
@@ -131,7 +154,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
                 chrome.scripting.executeScript({
                     target: { tabId: currentTab.id },
-                    function: replaceValue,
+                    function: replaceValueType1,
                     args: [
                         startId, 
                         JSON.stringify(answerJson)
