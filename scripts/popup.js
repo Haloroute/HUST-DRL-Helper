@@ -89,9 +89,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     var quizSpan = document.getElementById('quizSpan');
     var loadButton = document.getElementById('loadButton');
 
-    var answerJson = await fetchData(answerUrl);
-    //alert(JSON.stringify(answerJson));
-    //alert(answerJson);
     quizSpan.textContent = "Test";
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
@@ -108,6 +105,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         };
     });
 
+    var answerJson = await fetchData(answerUrl);
+    //alert(JSON.stringify(answerJson));
+    //alert(answerJson);
 
     // Lắng nghe phản hồi từ background script
     //chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     if (counter > 0) {
                         alert("Đã thay thế " + counter + " khóa! Tải lại trang để hiển thị kết quả!");
                         chrome.tabs.reload();
-                    } else alert("Không tìm thấy khóa phù hợp! Hãy chọn/nhập đáp án cho 1 câu hỏi rồi thử lại sau!");
+                    } else alert("Không tìm thấy khóa phù hợp! Hãy kiểm tra lại bài thi, hoặc chọn/nhập đáp án cho 1 câu hỏi bất kỳ rồi thử lại sau!");
                 });
 
                 //var counter = 0;
