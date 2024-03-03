@@ -28,3 +28,8 @@ button:hover {
     font-size: 15px;
     font-weight: bold;
 }
+
+#creditLabel {
+    margin-top: 20px;
+    font-size: 12px;
+}
