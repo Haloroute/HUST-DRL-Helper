@@ -4,10 +4,10 @@
   "description": "Hỗ trợ lấy điểm rèn luyện trên Microsoft Form cho sinh viên HUST! Hình ảnh: Flaticon.com",
   "version": "0.5",
   "permissions": [
-    "storage",
+    //"storage",
+    //"tabs",
     "scripting",
-    "activeTab",
-    "tabs"
+    "activeTab"
   ],
   "action": {
     "default_popup": "scripts/popup.html"
