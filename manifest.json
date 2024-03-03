@@ -9,6 +9,7 @@
     "scripting",
     "activeTab"
   ],
+  "default_locale": "en",
   "action": {
     "default_popup": "scripts/popup.html"
   },
