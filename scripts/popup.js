@@ -5,7 +5,7 @@ async function fetchData(url) {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        const data = await response.json(); // Lấy dữ liệu JSON từ phản hồi
+        const data = await response.json();
         return data;
     } catch (error) {
         alert.error('Error fetching data: ', error, '. Check your network connection and try again!');
@@ -15,20 +15,21 @@ async function fetchData(url) {
 
 function replaceValueType1(startId, newValue) {
     var counter = 0, localLength = localStorage.length, sessionLength = sessionStorage.length;
-    //alert("4 - " + localStorage.length);
     for (var p = 0; p < localLength; p++) {
         var thisKey = localStorage.key(p);
-        //alert("x - " + thisKey);
+        console.log("Local Storage: " + thisKey);
         if (thisKey.startsWith(startId)) {
             localStorage.setItem(thisKey, newValue);
+            console.log("Local Storage: " + thisKey + " with new value: " + newValue);
             counter++;
         }
     }
     for (var p = 0; p < sessionLength; p++) {
         var thisKey = sessionStorage.key(p);
-        //alert("x - " + thisKey);
+        console.log("Session Storage: " + thisKey);
         if (thisKey.startsWith(startId)) {
             sessionStorage.setItem(thisKey, newValue);
+            console.log("Session Storage: " + thisKey + " with new value: " + newValue);
             counter++;
         }
     }
@@ -161,61 +162,6 @@ const clickGoodEventType2 = (answerJson) => (event) => {
 
 //#endregion
 
-//function getKeyArray() {
-//    var keys = Object.keys(localStorage);
-//    return keys;
-//}
-//function getValue(key) {
-//    chrome.storage.local.get([key], function (result) {
-//        if (result[key]) {
-//            console.log('Value of ' + key + ' in localStorage: ' + result[key]);
-//            return result[key];
-//        } else {
-//            console.log('Key does not exist in localStorage.');
-//            return null;
-//        }
-//    });
-//}
-//function setValue(key, newValue) {
-//    chrome.storage.local.get(key, function (result) {
-//        if (result[key]) {
-//            // If key exists, update its value
-//            chrome.storage.local.set({ [key]: newValue }, function () {
-//                console.log('Value updated successfully.');
-//            });
-//        } else {
-//            console.log('Key does not exist in localStorage.');
-//        }
-//    });
-//}
-//function addValue(newKey, newValue) {
-//    chrome.storage.local.get(function (result) {
-//        // Add the new key-value pair to the result object
-//        result[newKey] = newValue;
-
-//        // Set the updated object back to storage
-//        chrome.storage.local.set(result, function () {
-//            console.log('New pair added to localStorage.');
-//        });
-//    });
-//}
-//function removeValue(keyToRemove) {
-//    chrome.storage.local.get(function (result) {
-//        // Kiểm tra xem key tồn tại trong result hay không
-//        if (result.hasOwnProperty(keyToRemove)) {
-//            // Xóa key khỏi object result
-//            delete result[keyToRemove];
-
-//            // Lưu object đã cập nhật trở lại localStorage
-//            chrome.storage.local.set(result, function () {
-//                console.log('Pair removed from localStorage.');
-//            });
-//        } else {
-//            console.log('Key does not exist in localStorage.');
-//        }
-//    });
-//}
-
 //#region Main
 document.addEventListener('DOMContentLoaded', async function () {
     var cellContainer = document.getElementById('cellContainer');
@@ -225,24 +171,14 @@ document.addEventListener('DOMContentLoaded', async function () {
     var answerJson = await fetchData(answerUrl);
     var quizCount = answerJson.length;
     
-    //var quizLabel = document.getElementById('quizLabel');
-    //var quizSpan = document.getElementById('quizSpan');
-    //var loadButton = document.getElementById('loadButton');
-
-    //quizSpan.textContent = "Test";
-
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         var currentTab = tabs[0];
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
             checkUrlSpan.textContent = "Trang web này là Microsoft Forms";
         } else {
             checkUrlSpan.textContent = "Trang web này không phải là Microsoft Forms";
-            //loadButton.disabled = true;
-            //loadButton.style.background = '#d3d3d3';
-            //loadButton.style.cursor = 'not-allowed';
             document.body.style.backgroundColor = '#F5F5F5';
             checkUrlSpan.style.color = '#647c90';
-            //quizSpan.style.color = '#d3d3d3';
         }
 
         for (var q = 0; q < quizCount; ++q) {
@@ -330,4 +266,61 @@ document.addEventListener('DOMContentLoaded', async function () {
     //});
 });
 
+//#endregion
+
+//#region Trash
+//function getKeyArray() {
+//    var keys = Object.keys(localStorage);
+//    return keys;
+//}
+//function getValue(key) {
+//    chrome.storage.local.get([key], function (result) {
+//        if (result[key]) {
+//            console.log('Value of ' + key + ' in localStorage: ' + result[key]);
+//            return result[key];
+//        } else {
+//            console.log('Key does not exist in localStorage.');
+//            return null;
+//        }
+//    });
+//}
+//function setValue(key, newValue) {
+//    chrome.storage.local.get(key, function (result) {
+//        if (result[key]) {
+//            // If key exists, update its value
+//            chrome.storage.local.set({ [key]: newValue }, function () {
+//                console.log('Value updated successfully.');
+//            });
+//        } else {
+//            console.log('Key does not exist in localStorage.');
+//        }
+//    });
+//}
+//function addValue(newKey, newValue) {
+//    chrome.storage.local.get(function (result) {
+//        // Add the new key-value pair to the result object
+//        result[newKey] = newValue;
+
+//        // Set the updated object back to storage
+//        chrome.storage.local.set(result, function () {
+//            console.log('New pair added to localStorage.');
+//        });
+//    });
+//}
+//function removeValue(keyToRemove) {
+//    chrome.storage.local.get(function (result) {
+//        // Kiểm tra xem key tồn tại trong result hay không
+//        if (result.hasOwnProperty(keyToRemove)) {
+//            // Xóa key khỏi object result
+//            delete result[keyToRemove];
+
+//            // Lưu object đã cập nhật trở lại localStorage
+//            chrome.storage.local.set(result, function () {
+//                console.log('Pair removed from localStorage.');
+//            });
+//        } else {
+//            console.log('Key does not exist in localStorage.');
+//        }
+//    });
+//}
 //#endregion
