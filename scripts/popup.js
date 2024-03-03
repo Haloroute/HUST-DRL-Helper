@@ -95,7 +95,7 @@ function addNewQuiz(name, id, args, eventType) {
 
 //#region Event
 
-const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/documents/answer.json";
+const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/answer.json";
 const startUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=";
 
 const clickBadEvent = (url) => (event) => {
