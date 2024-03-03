@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popup Extension</title>
-    <style>
+    <link rel="stylesheet" href="style.css">
+    <!--<style>
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -32,12 +33,16 @@
             font-weight: bold;
             display: "Bài thi: ";
         }
-    </style>
+    </style>-->
 </head>
 <body>
     <p id="checkUrlLabel"><span id="checkUrlSpan"></span></p>
-    <p id="quizLabel">Bài thi: <span id="quizSpan"></span></p>
-    <button id="loadButton">Tải đáp án</button>
+    <div id="cellContainer">
+        <!--<div class="cell">
+            <p id="quizLabel">Bài thi: <span id="quizSpan"></span></p>
+            <button id="loadButton">Tải đáp án</button>
+        </div>-->
+    </div>
 
     <script src="popup.js"></script>
 </body>
