@@ -65,6 +65,7 @@ function addNewQuiz(name, id, args, eventType) {
     const thisButton = document.createElement('button');
     if (eventType == 0) {
         thisButton.textContent = "Mở trang web";
+        thisButton.style.background = '#d3d3d3';
 
         const thisEvent = clickBadEvent(args);
         thisButton.addEventListener('click', thisEvent);
