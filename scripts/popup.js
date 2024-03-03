@@ -93,6 +93,10 @@ function addNewQuiz(name, id, args, eventType) {
 //#endregion
 
 //#region Event
+
+const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/documents/answer.json";
+const startUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=";
+
 const clickBadEvent = (url) => (event) => {
     console.log("Web: ", url);
     chrome.tabs.create({ url: url });
@@ -205,9 +209,6 @@ const clickGoodEventType2 = (answerJson) => (event) => {
 
 //#region Main
 document.addEventListener('DOMContentLoaded', async function () {
-    const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/documents/answer.json";
-    const startUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=";
-
     var cellContainer = document.getElementById('cellContainer');
     var checkUrlLabel = document.getElementById('checkUrlLabel');
     var checkUrlSpan = document.getElementById('checkUrlSpan');
