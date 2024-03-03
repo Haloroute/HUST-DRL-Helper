@@ -1,0 +1,30 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d3d3d3;
+}
+
+#checkUrlLabel {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#quizLabel {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
