@@ -14,13 +14,21 @@ async function fetchData(url) {
 }
 
 function replaceValueType1(startId, newValue) {
-    var counter = 0, length = localStorage.length;
+    var counter = 0, localLength = localStorage.length, sessionLength = sessionStorage.length;
     //alert("4 - " + localStorage.length);
-    for (var p = 0; p < length; p++) {
+    for (var p = 0; p < localLength; p++) {
         var thisKey = localStorage.key(p);
         //alert("x - " + thisKey);
         if (thisKey.startsWith(startId)) {
             localStorage.setItem(thisKey, newValue);
+            counter++;
+        }
+    }
+    for (var p = 0; p < sessionLength; p++) {
+        var thisKey = sessionStorage.key(p);
+        //alert("x - " + thisKey);
+        if (thisKey.startsWith(startId)) {
+            sessionStorage.setItem(thisKey, newValue);
             counter++;
         }
     }
