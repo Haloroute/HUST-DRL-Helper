@@ -2,6 +2,7 @@
     font-family: Arial, sans-serif;
     padding: 20px;
     width: 300px;
+    background-color: #7CF3A0;
 }
 
 button {
@@ -27,9 +28,10 @@ button:hover {
     margin-top: 10px;
     font-size: 15px;
     font-weight: bold;
+    color: #6D6F73;
 }
 
 #creditLabel {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 12px;
 }
