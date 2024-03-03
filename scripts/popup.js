@@ -8,7 +8,7 @@ async function fetchData(url) {
         const data = await response.json(); // Lấy dữ liệu JSON từ phản hồi
         return data;
     } catch (error) {
-        console.error('Error fetching data:', error);
+        alert.error('Error fetching data: ', error, '. Check your network connection and try again!');
         return null;
     }
 }
