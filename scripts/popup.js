@@ -205,7 +205,7 @@ const clickGoodEventType2 = (answerJson) => (event) => {
 
 //#region Main
 document.addEventListener('DOMContentLoaded', async function () {
-    const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/documents/answerMap.json";
+    const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/main/documents/answer.json";
     const startUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=";
 
     var cellContainer = document.getElementById('cellContainer');
