@@ -232,7 +232,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             //loadButton.disabled = true;
             //loadButton.style.background = '#d3d3d3';
             //loadButton.style.cursor = 'not-allowed';
-            checkUrlSpan.style.color = '#d3d3d3';
+            document.body.style.backgroundColor = '#F5F5F5';
+            checkUrlSpan.style.color = '#647c90';
             //quizSpan.style.color = '#d3d3d3';
         }
 
