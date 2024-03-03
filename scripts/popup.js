@@ -245,6 +245,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 thisEventType = 0;
                 thisArgs = answerJson[q].url;
             }
+            console.log("Quiz: ", answerJson[q].name);
             addNewQuiz(answerJson[q].name, 'quiz' + q, thisArgs, thisEventType);
         }
     });
