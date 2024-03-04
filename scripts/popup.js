@@ -35,7 +35,10 @@ function replaceValueType1(startId, newValue) {
     }
     return counter;
 }
-
+//function formatText(text) {
+//    console.log(text);
+//    return text.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
+//}
 function replaceValueType2(answer) {
     const formatText = t => t.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
     document.querySelectorAll('div[data-automation-id="questionItem"]').forEach((e => {
@@ -53,7 +56,7 @@ function replaceValueType2(answer) {
 //#endregion
 
 //#region Designer
-function addNewQuiz(name, id, args, eventType) {
+function addNewQuiz(name, id, eventJson) {
     const cellContainer = document.getElementById('cellContainer');
 
     const thisCell = document.createElement('div');
@@ -71,32 +74,35 @@ function addNewQuiz(name, id, args, eventType) {
 
     thisCell.appendChild(thisLabel);
 
-    const thisButton = document.createElement('button');
-    if (eventType == 0) {
-        thisButton.textContent = "Mở trang web";
-        thisButton.style.background = '#d3d3d3';
+    eventJson.forEach(function (event) {
+        const thisButton = document.createElement('button');
 
-        const thisEvent = clickBadEvent(args);
-        thisButton.addEventListener('click', thisEvent);
-    } else if (eventType == 1) {
-        thisButton.textContent = "Tải đáp án";
+        if (event.id == 0) {
+            thisButton.textContent = "Mở trang web";
+            thisButton.style.background = '#d3d3d3';
 
-        const thisEvent = clickGoodEventType1(args);
-        thisButton.addEventListener('click', thisEvent);
-    } else if (eventType == 2) {
-        thisButton.textContent = "Tải đáp án";
+            const thisEvent = clickBadEvent(event.args);
+            thisButton.addEventListener('click', thisEvent);
+        } else if (event.id == 1) {
+            thisButton.textContent = "Tải đáp án (cách 1)";
 
-        const thisEvent = clickGoodEventType2(args);
-        thisButton.addEventListener('click', thisEvent);
-    } else if (eventType == -1) {
-        thisButton.textContent = "Không thể tải đáp án";
-        thisButton.disabled = true;
-        thisButton.style.background = '#d3d3d3';
-        thisButton.style.cursor = 'not-allowed';
-    }
+            const thisEvent = clickGoodEventType1(event.args);
+            thisButton.addEventListener('click', thisEvent);
+        } else if (event.id == 2) {
+            thisButton.textContent = "Tải đáp án (cách 2)";
 
-    thisCell.appendChild(thisButton);
+            const thisEvent = clickGoodEventType2(event.args);
+            thisButton.addEventListener('click', thisEvent);
+        } else if (event.id == -1) {
+            thisButton.textContent = "Không thể tải đáp án";
+            thisButton.disabled = true;
+            thisButton.style.background = '#d3d3d3';
+            thisButton.style.cursor = 'not-allowed';
+        }
 
+        thisCell.appendChild(thisButton);
+    });
+    
     cellContainer.appendChild(thisCell);
 }
 
@@ -114,50 +120,55 @@ const clickBadEvent = (url) => (event) => {
 
 const clickGoodEventType1 = (answerJson) => (event) => {
     console.log('Answer: ', answerJson);
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        var currentTab = tabs[0], counter = 0;
-        if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-            var url = currentTab.url;
-            var startId = "officeforms.answermap." + url.replace(startUrl, "");
+    if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
+    else {
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            var currentTab = tabs[0], counter = 0;
+            if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
+                var url = currentTab.url;
+                var startId = "officeforms.answermap." + url.replace(startUrl, "");
 
-            chrome.scripting.executeScript({
-                target: { tabId: currentTab.id },
-                function: replaceValueType1,
-                args: [
-                    startId,
-                    JSON.stringify(answerJson)
-                ]
-            }, result => {
-                console.log(JSON.stringify(result));
-                counter = result[0].result;
-                if (counter > 0) {
-                    alert("Đã thay thế " + counter + " khóa! Tải lại trang để hiển thị kết quả!");
-                    chrome.tabs.reload();
-                } else alert("Không tìm thấy khóa phù hợp! Hãy kiểm tra lại địa chỉ website, hoặc chọn/nhập đáp án cho 1 câu hỏi bất kỳ rồi thử lại sau!");
-            });
+                chrome.scripting.executeScript({
+                    target: { tabId: currentTab.id },
+                    function: replaceValueType1,
+                    args: [
+                        startId,
+                        JSON.stringify(answerJson)
+                    ]
+                }, result => {
+                    console.log(JSON.stringify(result));
+                    counter = result[0].result;
+                    if (counter > 0) {
+                        alert("Đã thay thế " + counter + " khóa! Tải lại trang để hiển thị kết quả!");
+                        chrome.tabs.reload();
+                    } else alert("Không tìm thấy khóa phù hợp! Hãy kiểm tra lại địa chỉ website, hoặc chọn/nhập đáp án cho 1 câu hỏi bất kỳ rồi thử lại sau!");
+                });
 
-        } else alert("Đây không phải là trang web Microsoft Forms!");
-    });
+            } else alert("Đây không phải là trang web Microsoft Forms!");
+        });
+    }
 }
 
 const clickGoodEventType2 = (answerJson) => (event) => {
     console.log('Answer: ', answerJson);
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        var currentTab = tabs[0], counter = 0;
-        if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-            var url = currentTab.url;
-            var startId = "officeforms.answermap." + url.replace(startUrl, "");
+    if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
+    else {
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            var currentTab = tabs[0];
+            if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
+                var url = currentTab.url;
 
-            chrome.scripting.executeScript({
-                target: { tabId: currentTab.id },
-                function: replaceValueType2,
-                args: [ answerJson ]
-            }, () => {
-                alert("Đã thay thế đáp án khóa! Nếu không thấy sự thay đối, hãy kiểm tra lại địa chỉ website!");
-            });
+                chrome.scripting.executeScript({
+                    target: { tabId: currentTab.id },
+                    function: replaceValueType2,
+                    args: [answerJson]
+                }, () => {
+                    alert("Đã thay thế đáp án khóa! Nếu không thấy sự thay đối, hãy kiểm tra lại địa chỉ website!");
+                });
 
-        } else alert("Đây không phải là trang web Microsoft Forms!");
-    });
+            } else alert("Đây không phải là trang web Microsoft Forms!");
+        });
+    }
 }
 
 //#endregion
@@ -182,17 +193,21 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         for (var q = 0; q < quizCount; ++q) {
-            var thisArgs = '', thisEventType;
+            console.log("Quiz: ", answerJson[q].name);
+            /*var thisArgs = '', thisEventType;*/
+            var eventJson = [];
             if (currentTab.url == answerJson[q].url) {
-                thisEventType = 1;
-                thisArgs = answerJson[q].answerType1;
+                /*var eventTypeArray = [1, 2];*/
+                eventJson.push({ id: 1, args: answerJson[q].answerType1 })
+                eventJson.push({ id: 2, args: answerJson[q].answerType2 })
+                /*addNewQuiz(answerJson[q].name, 'quiz' + q, eventJson);*/
+                /*addNewQuiz(answerJson[q].name, 'quiz' + q, answerJson[q].answerType1, 2);*/
             }
             else {
-                thisEventType = 0;
-                thisArgs = answerJson[q].url;
+                eventJson.push({ id: 0, args: answerJson[q].url })
+                //addNewQuiz(answerJson[q].name, 'quiz' + q, answerJson[q].url, [0]);
             }
-            console.log("Quiz: ", answerJson[q].name);
-            addNewQuiz(answerJson[q].name, 'quiz' + q, thisArgs, thisEventType);
+            addNewQuiz(answerJson[q].name, 'quiz' + q, eventJson);
         }
     });
 
