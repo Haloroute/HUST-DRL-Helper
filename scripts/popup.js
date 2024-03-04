@@ -35,10 +35,12 @@ function replaceValueType1(startId, newValue) {
     }
     return counter;
 }
+
 //function formatText(text) {
 //    console.log(text);
 //    return text.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
 //}
+
 function replaceValueType2(answer) {
     const formatText = t => t.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
     document.querySelectorAll('div[data-automation-id="questionItem"]').forEach((e => {
