@@ -4,8 +4,6 @@
   "description": "Hỗ trợ lấy điểm rèn luyện trên Microsoft Form cho sinh viên HUST!",
   "version": "0.7",
   "permissions": [
-    //"storage",
-    //"tabs",
     "scripting",
     "activeTab"
   ],
