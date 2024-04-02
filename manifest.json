@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "HUST DRL Helper",
   "description": "Hỗ trợ lấy điểm rèn luyện trên Microsoft Form cho sinh viên HUST!",
-  "version": "0.8",
+  "version": "0.8.1",
   "permissions": [
     "scripting",
     "activeTab"
