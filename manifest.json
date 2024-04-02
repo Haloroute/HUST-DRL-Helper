@@ -8,18 +8,12 @@
     "activeTab"
   ],
   "action": {
-    "default_popup": "scripts/popup.html"
+    "default_popup": "scripts/main.html"
   },
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "{227bf86b-13db-4bb9-b564-cd68bca08898}",
-      "strict_min_version": "109.0"
-    }
   }
 }
