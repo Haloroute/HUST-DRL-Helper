@@ -30,7 +30,7 @@
                 eventJson.push({ id: 0, args: answerJson[q].url })
                 //addNewQuiz(answerJson[q].name, 'quiz' + q, answerJson[q].url, [0]);
             }
-            addNewQuiz(answerJson[q].name, 'quiz' + q, eventJson);
+            addNewQuiz(answerJson[q].name, answerJson[q].info, 'quiz' + q, eventJson);
         }
     });
 
