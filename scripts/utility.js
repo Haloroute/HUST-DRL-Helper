@@ -7,9 +7,28 @@ async function fetchData(url) {
         const data = await response.json();
         return data;
     } catch (error) {
-        alert.error('Error fetching data: ', error, '. Check your network connection and try again!');
+        alert('Error fetching data: ', error, '. Check your network connection and try again!');
         return null;
     }
+}
+
+function generateStorageKeyValuePair() {
+    // Lấy tất cả các phần tử input trong bảng câu hỏi
+    const buttonList = document.querySelectorAll('div[data-automation-id="choiceItem"]')
+
+    // Duyệt qua từng input
+    try {
+        if (buttonList.length !== 0) buttonList[0].querySelector("label").click();
+        else console.log('Cannot find questions!');
+    } catch (error) {
+        console.log('Error generating data: ', error);
+    }
+    
+    // buttonList.forEach(button => {
+    //     // Chọn đáp án đầu tiên trong số chúng
+    //     button.querySelector("label").click();
+    //     break;
+    // });
 }
 
 function replaceValueType1(startId, newValue) {
@@ -48,7 +67,7 @@ function replaceValueType2(answer) {
         if (a) {
             e.querySelectorAll('div[data-automation-id="choiceItem"]').forEach((answer => {
                 const e = answer.querySelector("span.text-format-content").textContent.trim();
-                a.includes(formatText(e)) && answer.querySelector("label").click()
+                a.includes(formatText(e)) && answer.querySelector("label").click();
             }))
         }
     }))

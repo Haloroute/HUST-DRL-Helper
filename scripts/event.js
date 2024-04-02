@@ -18,6 +18,12 @@ const clickGoodEventType1 = (answerJson) => (event) => {
 
                 chrome.scripting.executeScript({
                     target: { tabId: currentTab.id },
+                    function: generateStorageKeyValuePair,
+                    args: []
+                })
+
+                chrome.scripting.executeScript({
+                    target: { tabId: currentTab.id },
                     function: replaceValueType1,
                     args: [
                         startId,

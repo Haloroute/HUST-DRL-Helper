@@ -1,0 +1,76 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    width: 325px;
+    background-color: #f9f9f9; /* Đổi màu nền */
+}
+
+
+.cell {    
+    border: 1px solid #ccc; /* Đường viền */
+    padding: 15px; /* Khoảng cách giữa nội dung và đường viền */
+    border-radius: 5px; /* Góc cong */
+    margin-bottom: 10px; /* Khoảng cách giữa các cell */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+#checkUrlLabel {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f9f9f9; /* Màu nền */    
+    color: #4CAF50;
+    padding: 5px 10px; /* Tăng độ rộng để nổi bật hơn */
+    text-align: center; /* Căn giữa theo chiều ngang */
+    line-height: 1.5; /* Đảm bảo các dòng chữ được căn giữa theo chiều dọc */
+}
+#quizLabel {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Darken color */
+}
+#creditLabel {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666; /* Adjust color */
+}
+
+
+button {
+    padding: 8px 16px;
+    margin: 0 0 10px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Thêm transition */
+}
+.quizButton {
+    color: #fff; /* Default text color */
+}
+.align-right {
+    text-align: right; 
+}
+
+.goodEventButton {
+    background-color: #4CAF50;
+}
+.goodEventButton:hover {
+    background-color: #6fbf72 ;
+    font-weight: bold;
+}
+
+.badEventButton {
+    background-color: #FF5733;
+}
+.badEventButton:hover {
+    background-color: #FF8566;
+    font-weight: bold;
+}
+
+.disabledButton {
+    background-color: #AAAAAA;
+    color: #999999;
+    cursor: not-allowed;
+}

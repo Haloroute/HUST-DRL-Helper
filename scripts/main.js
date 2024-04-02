@@ -1,6 +1,6 @@
 ﻿document.addEventListener('DOMContentLoaded', async function () {
-    var cellContainer = document.getElementById('cellContainer');
-    var checkUrlLabel = document.getElementById('checkUrlLabel');
+    // var cellContainer = document.getElementById('cellContainer');
+    // var checkUrlLabel = document.getElementById('checkUrlLabel');
     var checkUrlSpan = document.getElementById('checkUrlSpan');
 
     var answerJson = await fetchData(answerUrl);
@@ -9,11 +9,10 @@
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         var currentTab = tabs[0];
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-            checkUrlSpan.textContent = "Trang web này là Microsoft Forms";
+            checkUrlSpan.textContent = "Bạn đã mở Microsoft Forms";
         } else {
-            checkUrlSpan.textContent = "Trang web này không phải là Microsoft Forms";
-            document.body.style.backgroundColor = '#F5F5F5';
-            checkUrlSpan.style.color = '#647c90';
+            checkUrlSpan.textContent = "Bạn chưa mở Microsoft Forms";
+            checkUrlSpan.style.color = '#FF5733';
         }
 
         for (var q = 0; q < quizCount; ++q) {
@@ -35,4 +34,9 @@
         }
     });
 
+});
+
+var infoButton = document.getElementById('infoButton');
+infoButton.addEventListener('click', function() {
+    alert('Phiên bản: 0.8\n\nLà một phần mềm của Nguyễn Quang Tuyến và "Sinh viên Vô danh".\nNguồn ảnh: flaticon.com.')
 });
