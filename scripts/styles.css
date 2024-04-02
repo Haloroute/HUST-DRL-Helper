@@ -33,6 +33,7 @@
 #infoLabel {    
     margin-top: 10px;
     font-size: 12px;
+    padding-left: 4px;
     color: #333; /* Darken color */
 }
 #creditLabel {
