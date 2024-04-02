@@ -48,23 +48,30 @@
 //     cellContainer.appendChild(thisCell);
 // }
 
-function addNewQuiz(name, id, eventJson) {
+function addNewQuiz(name, info, id, eventJson) {
     const cellContainer = document.getElementById('cellContainer');
 
     const thisCell = document.createElement('div');
     thisCell.classList.add('cell');
     thisCell.id = id;
 
-    const thisLabel = document.createElement('p');
-    thisLabel.id = "quizLabel";
-    const thisSpan = document.createElement('span');
-    thisSpan.id = "quizSpan";
-    thisSpan.textContent = name;
+    const thisQuizLabel = document.createElement('p');
+    thisQuizLabel.id = "quizLabel";
+    const thisQuizSpan = document.createElement('span');
+    thisQuizSpan.id = "quizSpan";
+    thisQuizSpan.textContent = name;
+    thisQuizLabel.appendChild(thisQuizSpan);
+
+    const thisInfoLabel = document.createElement('p');
+    thisInfoLabel.id = "infoLabel";
+    const thisInfoSpan = document.createElement('span');
+    thisInfoSpan.id = "infoSpan";
+    thisInfoSpan.textContent = info;
+    thisInfoLabel.appendChild(thisInfoSpan);
 
     // thisLabel.appendChild(document.createTextNode('Bài thi: '));
-    thisLabel.appendChild(thisSpan);
-
-    thisCell.appendChild(thisLabel);
+    thisCell.appendChild(thisQuizLabel);
+    thisCell.appendChild(thisInfoLabel);
 
     eventJson.forEach(function (event) {
         const thisButton = document.createElement('button');
