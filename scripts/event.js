@@ -33,8 +33,8 @@ const clickGoodEventType1 = (answerJson) => (event) => {
                     console.log(JSON.stringify(result));
                     counter = result[0].result;
                     if (counter > 0) {
-                        alert("Đã thay thế " + counter + " khóa! Tải lại trang để hiển thị kết quả!");
                         chrome.tabs.reload();
+                        alert("Đã thay thế " + counter + " khóa! Nếu kết quả không như mong muốn, hãy thử cách 2!");
                     } else alert("Không tìm thấy khóa phù hợp! Hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!");
                 });
 
