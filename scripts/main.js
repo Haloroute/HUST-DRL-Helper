@@ -1,7 +1,10 @@
-﻿document.addEventListener('DOMContentLoaded', async function () {
+﻿var manifestData = chrome.runtime.getManifest();
+var infoButton = document.getElementById('infoButton');
+var checkUrlSpan = document.getElementById('checkUrlSpan');
+
+document.addEventListener('DOMContentLoaded', async function () {
     // var cellContainer = document.getElementById('cellContainer');
     // var checkUrlLabel = document.getElementById('checkUrlLabel');
-    var checkUrlSpan = document.getElementById('checkUrlSpan');
 
     var answerJson = await fetchData(answerUrl);
     var quizCount = answerJson.length;
@@ -36,7 +39,6 @@
 
 });
 
-var infoButton = document.getElementById('infoButton');
 infoButton.addEventListener('click', function() {
-    alert('Phiên bản: 0.8\n\nLà một phần mềm của Nguyễn Quang Tuyến và "Sinh viên Vô danh".\nNguồn ảnh: flaticon.com.')
+    alert('Phiên bản: ' + manifestData.version + '\n\nLà một phần mềm của Nguyễn Quang Tuyến và "Sinh viên Vô danh".\nNguồn ảnh: flaticon.com.')
 });
