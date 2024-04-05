@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 console.log("Quiz: ", answerJson[q].name);
                 /*var thisArgs = '', thisEventType;*/
                 var eventJson = [];
-                if (currentTab.url == answerJson[q].url) {
+                if (currentTab.url.includes(answerJson[q].url)) {
                     /*var eventTypeArray = [1, 2];*/
                     eventJson.push({ id: 1, args: answerJson[q].answerType1 })
                     eventJson.push({ id: 2, args: answerJson[q].answerType2 })
