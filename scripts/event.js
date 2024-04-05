@@ -1,5 +1,5 @@
 const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/answer.json";
-const startUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=";
+const startUrl = "https://forms.office.com/pages/responsepage.aspx?id=";
 
 const clickBadEvent = (url) => (event) => {
     console.log("Web: ", url);
@@ -13,8 +13,8 @@ const clickGoodEventType1 = (answerJson) => (event) => {
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             var currentTab = tabs[0], counter = 0;
             if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-                var url = currentTab.url;
-                var startId = "officeforms.answermap." + url.replace(startUrl, "");
+                var url = currentTab.url.slice(startUrl.length).split("&")[0];
+                var startId = "officeforms.answermap." + url;
 
                 chrome.scripting.executeScript({
                     target: { tabId: currentTab.id },
