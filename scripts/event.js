@@ -1,4 +1,5 @@
 const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/answer.json";
+const noticeUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/notice.txt";
 const startUrl = "https://forms.office.com/pages/responsepage.aspx?id=";
 
 const clickBadEvent = (url) => (event) => {
