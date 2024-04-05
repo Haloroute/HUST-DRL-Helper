@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         var currentTab = tabs[0];
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
             checkUrlSpan.textContent = "Bạn đã mở Microsoft Forms";
+            checkUrlSpan.style.color = '#4CAF50';
         } else {
             checkUrlSpan.textContent = "Bạn chưa mở Microsoft Forms";
             checkUrlSpan.style.color = '#FF5733';
