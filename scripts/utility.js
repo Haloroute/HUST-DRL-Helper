@@ -1,10 +1,12 @@
-async function fetchData(url) {
+async function fetchData(url, type='json') {
     try {
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        const data = await response.json();
+        var data;
+        if (type == 'json') data = await response.json();
+        else if (type == 'text') data = await response.text();
         return data;
     } catch (error) {
         alert('Error fetching data: ', error, '. Check your network connection and try again!');
