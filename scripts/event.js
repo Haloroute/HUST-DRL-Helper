@@ -4,6 +4,7 @@ const startUrl = "https://forms.office.com/pages/responsepage.aspx?id=";
 
 const clickBadEvent = (url) => (event) => {
     console.log("Web: ", url);
+    alert("Sau khi tab mới xuất hiện thì hãy chuyển sang tab mới và click lại vào tiện ích này nhé!");
     chrome.tabs.create({ url: url });
 }
 
