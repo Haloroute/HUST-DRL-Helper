@@ -26,11 +26,6 @@ function generateStorageKeyValuePair() {
         console.log('Error generating data: ', error);
     }
     
-    // buttonList.forEach(button => {
-    //     // Chọn đáp án đầu tiên trong số chúng
-    //     button.querySelector("label").click();
-    //     break;
-    // });
 }
 
 function replaceValueType1(startId, newValue) {
@@ -56,10 +51,6 @@ function replaceValueType1(startId, newValue) {
     return counter;
 }
 
-//function formatText(text) {
-//    console.log(text);
-//    return text.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
-//}
 
 function replaceValueType2(answer) {
     const formatText = t => t.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
