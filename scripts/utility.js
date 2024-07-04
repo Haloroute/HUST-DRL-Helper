@@ -1,15 +1,21 @@
 async function fetchData(url, type='json') {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('Network response was not ok! Check your network connection and try again!');
         }
         var data;
-        if (type == 'json') data = await response.json();
-        else if (type == 'text') data = await response.text();
+        if (type == 'json') {
+            data = await response.json();
+            console.log("Successfully received JSON data!");
+        } else if (type == 'text') {
+            data = await response.text();
+            console.log("Successfully received TEXT data!");
+        }
         return data;
     } catch (error) {
-        alert('Error fetching data: ', error, '. Check your network connection and try again!');
+        console.log('Error fetching data from: ', url);
+        console.log('with error: ', error);
         return null;
     }
 }
@@ -20,10 +26,13 @@ function generateStorageKeyValuePair() {
 
     // Duyệt qua từng input
     try {
-        if (buttonList.length !== 0) buttonList[0].querySelector("label").click();
+        if (buttonList.length !== 0) {
+            buttonList[0].querySelector("label").click();
+            console.log('Successfully generated key-value pair!');
+        }
         else console.log('Cannot find questions!');
     } catch (error) {
-        console.log('Error generating data: ', error);
+        console.log('Error generating key-value pairs: ', error);
     }
     
 }
@@ -48,6 +57,7 @@ function replaceValueType1(startId, newValue) {
             counter++;
         }
     }
+    console.log("Successfully replaced value (type 1)");
     return counter;
 }
 
@@ -64,4 +74,5 @@ function replaceValueType2(answer) {
             }))
         }
     }))
+    console.log("Successfully replaced value (type 2)");
 }
