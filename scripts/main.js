@@ -6,21 +6,24 @@ var noticeSpan = document.getElementById('noticeSpan');
 document.addEventListener('DOMContentLoaded', async function () {
     var answerJson = await fetchData(answerUrl, 'json');
     var noticeText = await fetchData(noticeUrl, 'text');
-    var quizCount = answerJson.length;    
     noticeSpan.textContent = noticeText;
 
     if (answerJson == null) {
         checkUrlSpan.textContent = "Không có kết nối internet!";
+        alert('Error fetching data: ', error);
     }
     else {
+        var quizCount = answerJson.length;    
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             var currentTab = tabs[0];
             if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
                 checkUrlSpan.textContent = "Bạn đã mở Microsoft Forms";
                 checkUrlSpan.style.color = '#4CAF50';
+                console.log("Microsoft Forms website has already been opened");
             } else {
                 checkUrlSpan.textContent = "Bạn chưa mở Microsoft Forms";
                 checkUrlSpan.style.color = '#FF5733';
+                console.log("Microsoft Forms website hasn't been opened yet");
             }
     
             for (var q = 0; q < quizCount; ++q) {
@@ -39,6 +42,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     //addNewQuiz(answerJson[q].name, 'quiz' + q, answerJson[q].url, [0]);
                 }
                 addNewQuiz(answerJson[q].name, answerJson[q].info, 'quiz' + q, eventJson);
+                console.log("Successfully initialized quiz: ", answerJson[q].name);
             }
         });
     }
