@@ -6,14 +6,15 @@ var noticeSpan = document.getElementById('noticeSpan');
 document.addEventListener('DOMContentLoaded', async function () {
     var answerJson = await fetchData(answerUrl, 'json');
     var noticeText = await fetchData(noticeUrl, 'text');
-    noticeSpan.textContent = noticeText;
 
     if (answerJson == null) {
         checkUrlSpan.textContent = "Không có kết nối internet!";
         alert('Error fetching data: ', error);
     }
     else {
-        var quizCount = answerJson.length;    
+        noticeSpan.textContent = noticeText;
+        var quizCount = answerJson.length;  
+          
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             var currentTab = tabs[0];
             if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
