@@ -2,50 +2,50 @@
 var infoButton = document.getElementById('infoButton');
 var checkUrlSpan = document.getElementById('checkUrlSpan');
 var noticeSpan = document.getElementById('noticeSpan');
+var cellContainer = document.getElementById('cellContainer');
+
+
+function initialize(currentTab, answerJson) {    
+    var quizCount = answerJson.length;  
+
+    if (currentTab == undefined || !currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
+        changeNotification("Bạn chưa mở Microsoft Forms", "#FF5733");
+        console.log("Microsoft Forms website hasn't been opened yet");
+    } else {
+        changeNotification("Bạn đã mở Microsoft Forms", "#4CAF50");
+        console.log("Microsoft Forms website has already been opened");       
+    }
+
+    for (var q = 0; q < quizCount; ++q) {
+        console.log("Quiz: ", answerJson[q].name);
+        
+        var eventJson = [];
+        if (currentTab.url.includes(answerJson[q].url)) {
+            eventJson.push({ id: 1, args: answerJson[q].answerType1 });
+            eventJson.push({ id: 2, args: answerJson[q].answerType2 });
+        }
+        else eventJson.push({ id: 0, args: answerJson[q].url });
+        
+        cellContainer.appendChild(createQuizCell(answerJson[q].name, answerJson[q].info, 'quiz' + q, eventJson));
+        console.log("Successfully initialized quiz: ", answerJson[q].name);
+    }
+}
+
 
 document.addEventListener('DOMContentLoaded', async function () {
     var answerJson = await fetchData(answerUrl, 'json');
     var noticeText = await fetchData(noticeUrl, 'text');
 
     if (answerJson == null) {
-        checkUrlSpan.textContent = "Không có kết nối internet!";
+        changeNotification("Không có kết nối internet", "#666");
         alert('Error fetching data: ', error);
     }
     else {
-        noticeSpan.textContent = noticeText;
-        var quizCount = answerJson.length;  
-          
-        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-            var currentTab = tabs[0];
-            if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-                checkUrlSpan.textContent = "Bạn đã mở Microsoft Forms";
-                checkUrlSpan.style.color = '#4CAF50';
-                console.log("Microsoft Forms website has already been opened");
-            } else {
-                checkUrlSpan.textContent = "Bạn chưa mở Microsoft Forms";
-                checkUrlSpan.style.color = '#FF5733';
-                console.log("Microsoft Forms website hasn't been opened yet");
-            }
-    
-            for (var q = 0; q < quizCount; ++q) {
-                console.log("Quiz: ", answerJson[q].name);
-                /*var thisArgs = '', thisEventType;*/
-                var eventJson = [];
-                if (currentTab.url.includes(answerJson[q].url)) {
-                    /*var eventTypeArray = [1, 2];*/
-                    eventJson.push({ id: 1, args: answerJson[q].answerType1 })
-                    eventJson.push({ id: 2, args: answerJson[q].answerType2 })
-                    /*addNewQuiz(answerJson[q].name, 'quiz' + q, eventJson);*/
-                    /*addNewQuiz(answerJson[q].name, 'quiz' + q, answerJson[q].answerType1, 2);*/
-                }
-                else {
-                    eventJson.push({ id: 0, args: answerJson[q].url })
-                    //addNewQuiz(answerJson[q].name, 'quiz' + q, answerJson[q].url, [0]);
-                }
-                addNewQuiz(answerJson[q].name, answerJson[q].info, 'quiz' + q, eventJson);
-                console.log("Successfully initialized quiz: ", answerJson[q].name);
-            }
-        });
+        noticeSpan.textContent = noticeText;          
+        let currentTab = await getCurrentTab();
+        
+        initialize(currentTab, answerJson);
+
     }
 });
 

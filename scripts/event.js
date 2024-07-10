@@ -10,75 +10,75 @@ const clickBadEvent = (url) => (event) => {
     console.log("Successfully completed bad event!");
 }
 
-const clickGoodEventType1 = (answerJson) => (event) => {    
+
+const clickGoodEventType1 = async (answerJson) => async (event) => {    
     console.log("Click good event (type 1)!");
     console.log('Answer: ', answerJson);
     if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
-    else {
-        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-            var currentTab = tabs[0], counter = 0;
-            if (currentTab.url.match(/https\:\/\/forms\.office\.com\/pages\/responsepage/i)) {
-                var url = currentTab.url.slice(startUrl.length).split("&")[0];
-                var startId = "officeforms.answermap." + url;
+    else {        
+        let currentTab = await getCurrentTab(), counter = 0;
+        // var currentTab = tabs[0], counter = 0;
+        if (currentTab.url.match(/https\:\/\/forms\.office\.com\/pages\/responsepage/i)) {
+            var url = currentTab.url.slice(startUrl.length).split("&")[0];
+            var startId = "officeforms.answermap." + url;
 
-                chrome.scripting.executeScript({
-                    target: { tabId: currentTab.id },
-                    function: generateStorageKeyValuePair,
-                    args: []
-                })
+            chrome.scripting.executeScript({
+                target: { tabId: currentTab.id },
+                function: generateStorageKeyValuePair,
+                args: []
+            })
 
-                chrome.scripting.executeScript({
-                    target: { tabId: currentTab.id },
-                    function: replaceValueType1,
-                    args: [
-                        startId,
-                        JSON.stringify(answerJson)
-                    ]
-                }, result => {
-                    console.log(JSON.stringify(result));
-                    counter = result[0].result;
-                    if (counter > 0) {
-                        chrome.tabs.reload();
-                        alert("Đã thay thế " + counter + " khóa! Nếu kết quả không như mong muốn, hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!");
-                        console.log("Successfully completed good event (type 1)!");
-                    } else {
-                        alert("Không tìm thấy khóa phù hợp! Hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!");
-                        console.log("Not found necessary key-value pairs (type 1)!");
-                    }
-                });
+            chrome.scripting.executeScript({
+                target: { tabId: currentTab.id },
+                function: replaceValueType1,
+                args: [
+                    startId,
+                    JSON.stringify(answerJson)
+                ]
+            }, result => {
+                console.log(JSON.stringify(result));
+                counter = result[0].result;
+                if (counter > 0) {
+                    chrome.tabs.reload();
+                    alert("Đã thay thế " + counter + " khóa! Nếu kết quả không như mong muốn, hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!");
+                    console.log("Successfully completed good event (type 1)!");
+                } else {
+                    alert("Không tìm thấy khóa phù hợp! Hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!");
+                    console.log("Not found necessary key-value pairs (type 1)!");
+                }
+            });
 
-            } else {
-                alert("Đây không phải là trang web Microsoft Forms!");
-                console.log('Wrong website (type 1)!');
-            }
-        });
+        } else {
+            alert("Đây không phải là trang web Microsoft Forms!");
+            console.log('Wrong website (type 1)!');
+        }
     }
 
 }
 
-const clickGoodEventType2 = (answerJson) => (event) => {    
+
+const clickGoodEventType2 = async (answerJson) => async (event) => {    
     console.log("Click good event (type 2)!");
     console.log('Answer: ', answerJson);
     if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
     else {
-        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-            var currentTab = tabs[0];
-            if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-                // var url = currentTab.url;
+        let currentTab = await getCurrentTab();
+        if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
+            // var url = currentTab.url;
 
-                chrome.scripting.executeScript({
-                    target: { tabId: currentTab.id },
-                    function: replaceValueType2,
-                    args: [answerJson]
-                }, () => {
-                    alert("Đã thay thế đáp án khóa! Nếu không thấy sự thay đối, hãy kiểm tra lại địa chỉ website hoặc thử lại bằng cách khác!");
-                    console.log("Successfully completed good event (type 2)!");
-                });
+            chrome.scripting.executeScript({
+                target: { tabId: currentTab.id },
+                function: replaceValueType2,
+                args: [answerJson]
+            }, () => {
+                alert("Đã thay thế đáp án khóa! Nếu không thấy sự thay đối, hãy kiểm tra lại địa chỉ website hoặc thử lại bằng cách khác!");
+                console.log("Successfully completed good event (type 2)!");
+            });
 
-            } else {              
-                alert("Đây không phải là trang web Microsoft Forms!");
-                console.log('Wrong website (type 2)!');
-            }
-        });
+        } else {              
+            alert("Đây không phải là trang web Microsoft Forms!");
+            console.log('Wrong website (type 2)!');
+        }
+        
     }
 }

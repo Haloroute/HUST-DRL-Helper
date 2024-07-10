@@ -1,25 +1,3 @@
-async function fetchData(url, type='json') {
-    try {
-        const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
-        if (!response.ok) {
-            throw new Error('Network response was not ok! Check your network connection and try again!');
-        }
-        var data;
-        if (type == 'json') {
-            data = await response.json();
-            console.log("Successfully received JSON data!");
-        } else if (type == 'text') {
-            data = await response.text();
-            console.log("Successfully received TEXT data!");
-        }
-        return data;
-    } catch (error) {
-        console.log('Error fetching data from: ', url);
-        console.log('with error: ', error);
-        return null;
-    }
-}
-
 function generateStorageKeyValuePair() {
     // Lấy tất cả các phần tử input trong bảng câu hỏi
     const buttonList = document.querySelectorAll('div[data-automation-id="choiceItem"]')
