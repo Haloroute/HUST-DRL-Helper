@@ -1,42 +1,60 @@
 [
-    {
-      "answerType1": "[{\"Answer\":\"2\",\"QuestionId\":\"rb37a5c0c5d27476ea81f83e303393326\"},{\"Answer\":\"1\",\"QuestionId\":\"r8257f4de2fff4187b461c69593fabcb1\"}]",
-      "answerType2": [
-        {
-          "answer": [
-            "2"
-          ],
-          "question": "1+1"
-        },
-        {
-          "answer": [
-            "1"
-          ],
-          "question": "1*1"
-        }
-      ],
-      "info": "Nội dung mô tả số 1",
-      "name": "BÀI TEST PHẦN MỀM SỐ 1",
-      "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=n7jxBugHT0a0COwbRXA_MVvZ93rF6jhKrwsuguY1O_lUMTMwRTlSNUxOOFhFUVA1QVVUSkxFWDNEMi4u"
-    },
-    {
-      "answerType1": "[{\"Answer\":\"2\",\"QuestionId\":\"rb37a5c0c5d27476ea81f83e303393326\"},{\"Answer\":\"1\",\"QuestionId\":\"r8257f4de2fff4187b461c69593fabcb1\"}]",
-      "answerType2": [
-        {
-          "answer": [
-            "2"
-          ],
-          "question": "1+1"
-        },
-        {
-          "answer": [
-            "1"
-          ],
-          "question": "1*1"
-        }
-      ],
-      "info": "Nội dung mô tả số 2",
-      "name": "BÀI TEST PHẦN MỀM SỐ 2",
-      "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=n7jxBugHT0a0COwbRXA_MVvZ93rF6jhKrwsuguY1O_lUNUZaTDNEMVA4QVlaUzRJTU4yUEgwWUFWMy4u"
-    }
+  {
+    "answerType1": [
+      {
+        "Answer": "1",
+        "QuestionId": "rb37a5c0c5d27476ea81f83e303393326"
+      },
+      {
+        "Answer": "1",
+        "QuestionId": "r8257f4de2fff4187b461c69593fabcb1"
+      }
+    ],
+    "answerType2": [
+      {
+        "answer": [
+          "1"
+        ],
+        "question": "1+1"
+      },
+      {
+        "answer": [
+          "1"
+        ],
+        "question": "1*1"
+      }
+    ],
+    "info": "Nội dung mô tả số 1",
+    "name": "BÀI TEST PHẦN MỀM SỐ 1",
+    "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=n7jxBugHT0a0COwbRXA_MVvZ93rF6jhKrwsuguY1O_lUMTMwRTlSNUxOOFhFUVA1QVVUSkxFWDNEMi4u"
+  },
+  {
+    "answerType1": [
+      {
+        "Answer": "2",
+        "QuestionId": "rb37a5c0c5d27476ea81f83e303393326"
+      },
+      {
+        "Answer": "1",
+        "QuestionId": "r8257f4de2fff4187b461c69593fabcb1"
+      }
+    ],
+    "answerType2": [
+      {
+        "answer": [
+          "2"
+        ],
+        "question": "1+1"
+      },
+      {
+        "answer": [
+          "1"
+        ],
+        "question": "1*1"
+      }
+    ],
+    "info": "Nội dung mô tả số 2",
+    "name": "BÀI TEST PHẦN MỀM SỐ 2",
+    "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=n7jxBugHT0a0COwbRXA_MVvZ93rF6jhKrwsuguY1O_lUNUZaTDNEMVA4QVlaUzRJTU4yUEgwWUFWMy4u"
+  }
 ]
