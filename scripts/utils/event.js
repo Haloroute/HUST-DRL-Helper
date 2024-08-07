@@ -10,8 +10,11 @@ const clickBadEvent = (url) => (event) => {
     console.log("Successfully completed bad event!");
 }
 
+// const clickGoodEventType1 = (answerJson) => async (event) => {
+//     alert("Test");
+// }
 
-const clickGoodEventType1 = async (answerJson) => async (event) => {    
+const clickGoodEventType1 = (answerJson) => async (event) => {    
     console.log("Click good event (type 1)!");
     console.log('Answer: ', answerJson);
     if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
@@ -57,7 +60,7 @@ const clickGoodEventType1 = async (answerJson) => async (event) => {
 }
 
 
-const clickGoodEventType2 = async (answerJson) => async (event) => {    
+const clickGoodEventType2 = (answerJson) => async (event) => {    
     console.log("Click good event (type 2)!");
     console.log('Answer: ', answerJson);
     if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
