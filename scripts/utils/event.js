@@ -10,20 +10,16 @@ const clickBadEvent = (url) => (event) => {
     console.log("Successfully completed bad event!");
 }
 
-// const clickGoodEventType1 = (answerJson) => async (event) => {
-//     alert("Test");
-// }
-
 const clickGoodEventType1 = (answerJson) => async (event) => {    
     console.log("Click good event (type 1)!");
     console.log('Answer: ', answerJson);
     if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
     else {        
         let currentTab = await getCurrentTab(), counter = 0;
-        // var currentTab = tabs[0], counter = 0;
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/pages\/responsepage/i)) {
-            var url = currentTab.url.slice(startUrl.length).split("&")[0];
-            var startId = "officeforms.answermap." + url;
+
+            var formsId = currentTab.url.slice(startUrl.length).split("&")[0];
+            var storageId = "officeforms.answermap." + formsId;
 
             chrome.scripting.executeScript({
                 target: { tabId: currentTab.id },
@@ -35,7 +31,7 @@ const clickGoodEventType1 = (answerJson) => async (event) => {
                 target: { tabId: currentTab.id },
                 function: replaceValueType1,
                 args: [
-                    startId,
+                    storageId,
                     JSON.stringify(answerJson)
                 ]
             }, result => {
@@ -67,7 +63,6 @@ const clickGoodEventType2 = (answerJson) => async (event) => {
     else {
         let currentTab = await getCurrentTab();
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-            // var url = currentTab.url;
 
             chrome.scripting.executeScript({
                 target: { tabId: currentTab.id },
