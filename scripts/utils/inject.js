@@ -44,7 +44,7 @@ function replaceValueType2(answer) {
     const formatText = t => t.replace(/\s+/g, " ").replace(/“|”/g, '"').replace(/–/g, "-").normalize("NFC");
     document.querySelectorAll('div[data-automation-id="questionItem"]').forEach((e => {
         const o = formatText(e.querySelector("span.text-format-content").textContent).trim(),
-            a = answer.find((answer => formatText(answer.question) === o))?.answer;
+            a = answer.find((answer => formatText(answer.Question) === o))?.Answer;
         if (a) {
             e.querySelectorAll('div[data-automation-id="choiceItem"]').forEach((answer => {
                 const e = answer.querySelector("span.text-format-content").textContent.trim();

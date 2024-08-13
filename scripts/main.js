@@ -17,17 +17,17 @@ function initialize(currentTab, answerJson) {
     }
 
     for (var q = 0; q < quizCount; ++q) {
-        console.log("Quiz: ", answerJson[q].name);
+        console.log("Quiz: ", JSON.stringify(answerJson[q]));
         
         var eventJson = [];
-        if (currentTab.url.includes(answerJson[q].url)) {
-            eventJson.push({ id: 1, args: answerJson[q].answerType1 });
-            eventJson.push({ id: 2, args: answerJson[q].answerType2 });
+        if (currentTab.url.toLowerCase().includes(answerJson[q].Url.toLowerCase())) {
+            eventJson.push({ id: 1, args: answerJson[q].AnswerType1 });
+            eventJson.push({ id: 2, args: answerJson[q].AnswerType2 });
         }
-        else eventJson.push({ id: 0, args: answerJson[q].url });
+        else eventJson.push({ id: 0, args: answerJson[q].Url });
         
-        cellContainer.appendChild(createQuizCell(answerJson[q].name, answerJson[q].info, 'quiz' + q, eventJson));
-        console.log("Successfully initialized quiz: ", answerJson[q].name);
+        cellContainer.appendChild(createQuizCell(answerJson[q].Name, answerJson[q].Info, 'quiz' + q, eventJson));
+        console.log("Successfully initialized quiz: ", answerJson[q].Name);
     }
 }
 
