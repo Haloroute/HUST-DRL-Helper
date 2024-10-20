@@ -2,59 +2,1167 @@
   {
     "AnswerType1": [
       {
-        "Answer": "1",
-        "QuestionId": "rb37a5c0c5d27476ea81f83e303393326"
+        "Answer": "[\"Toàn diện \",\"Hợp lý\",\"Nổi bật trọng điểm\",\"Dành khoảng thời gian trống\"]",
+        "QuestionId": "rc17721209c364448b3ba9e12492f14ce"
       },
       {
-        "Answer": "1",
-        "QuestionId": "r8257f4de2fff4187b461c69593fabcb1"
+        "Answer": "8.3",
+        "QuestionId": "r03016c0fa9724ebd8e5b7c564f683de5"
+      },
+      {
+        "Answer": "1-3-2-5-4",
+        "QuestionId": "r4115431f131c485688adb5ff9460d1f8"
+      },
+      {
+        "Answer": "Khi đủ 2 học kỳ liên tiếp dưới 50đ.",
+        "QuestionId": "r2564864604144ffd8e4eb1e86af6fde4"
+      },
+      {
+        "Answer": "dtn@hust.edu.vn",
+        "QuestionId": "rec1f26727f19478888387334f85d74bc"
+      },
+      {
+        "Answer": "dt@hust.edu.vn",
+        "QuestionId": "r648ba0966897451a8a72f70533aa9de5"
+      },
+      {
+        "Answer": "Đăng ký lớp cho các môn đã chọn trong kỳ tới",
+        "QuestionId": "rb164604ddeb64a58b39c0570f72bbaef"
+      },
+      {
+        "Answer": "[\"Giáo viên chấm điểm theo khung điểm, kết quả tự đánh giá và minh chứng\",\"Thực hiện trên hệ thống sổ tay sinh viên Online (Web/App)\",\"Cách thức đánh giá bao gồm cả ba phương án trên\",\"Sinh viên tự đánh giá theo các minh chứng tham gia hoạt động tích lũy được\"]",
+        "QuestionId": "r056fcbd02c344b2f971adbff26b7ed24"
+      },
+      {
+        "Answer": "Trọng số của điểm kiểm tra giữa kỳ là 0,4, cuối kỳ là 0,6",
+        "QuestionId": "r29e8ae5818a84287914cc6135accd7dd"
+      },
+      {
+        "Answer": "Trung tâm Dịch vụ và Hỗ trợ Bách khoa",
+        "QuestionId": "rb704ee813a444c94bd87d2980504ad48"
+      },
+      {
+        "Answer": "[Tình trạng] Tiêu đề email.",
+        "QuestionId": "r1697579a36f04a3c83904212617790a3"
+      },
+      {
+        "Answer": "Bắt đầu từ học kỳ thứ 3",
+        "QuestionId": "re3de55b27b164b01be21ba5433974bdf"
+      },
+      {
+        "Answer": "https://lms.hust.edu.vn",
+        "QuestionId": "r1dffe60ce0c740118492111b95779ff8"
+      },
+      {
+        "Answer": "http://libopac.hust.edu.vn/",
+        "QuestionId": "r6faaa9f9e0fe4b90bfc542328063c367"
+      },
+      {
+        "Answer": "100 – 50",
+        "QuestionId": "r894f01cbb58a4fd28d78557055066c98"
+      },
+      {
+        "Answer": "Số lượng tài liệu mượn tối đa: 8 cuốn (phòng 111); 5 cuốn (phòng 102). Thời gian mượn: 60 ngày (phòng 111); 30 ngày (phòng 102). Gia hạn: 30 ngày (phòng 111); 7 ngày (phòng 102).",
+        "QuestionId": "r9468275279af4a3595216ce5cd2630f6"
+      },
+      {
+        "Answer": "10 – 6 – 3",
+        "QuestionId": "rb75818d90d3147a497d61815508007ca"
+      },
+      {
+        "Answer": "2000 - 2006",
+        "QuestionId": "rcbae9abad2134f33a2c1c90397ddc5f9"
+      },
+      {
+        "Answer": "[\"Chỉ tại các phòng 102 – 104 tòa nhà C1\",\"Chỉ qua Email: ctsv@hust.edu.vn\",\"Chỉ thông qua FB: www.fb.com/ctsv.hust.edu.vn\"]",
+        "QuestionId": "r73ff7b77a5184ba9b91390f02e0bc6e6"
+      },
+      {
+        "Answer": "https://www.facebook.com/dhbkhanoi",
+        "QuestionId": "rb4db33fe91e84850a94d70b2758f62ac"
+      },
+      {
+        "Answer": "Thường vào 2 tuần 5-6 của học kỳ hiện tại",
+        "QuestionId": "r1ef6c8f710d744fd809bdcbf2c7c4db7"
+      },
+      {
+        "Answer": "2 tuần sau khi kết thúc thi học kỳ",
+        "QuestionId": "rca1e0e49c08640de9d5c8d0f9249f102"
+      },
+      {
+        "Answer": "Trình độ năm thứ nhất nếu số tín chỉ tích lũy <32",
+        "QuestionId": "rce82a0fd370048bb943f98c4373e2b79"
+      },
+      {
+        "Answer": "Mua và sử dụng các chất kích thích, ma túy, đồ chơi tiêu khiển vì mục đích mua vui cho bản thân, cá nhân",
+        "QuestionId": "r571b88c7d81246f5afaa34f00da9ac33"
+      },
+      {
+        "Answer": "8.5-9.4",
+        "QuestionId": "r82244d76ab6a46bea29906b64cd51469"
+      },
+      {
+        "Answer": "[\"Ngày Mùng 1 Tết Mậu Tuất 1958\",\"Ngày 17/06/1960\",\"Ngày 11/03/1962\"]",
+        "QuestionId": "r848a932e198841f8981cc847dc01cf7a"
+      },
+      {
+        "Answer": "https://ctt.hust.edu.vn/",
+        "QuestionId": "rc042784c35974b898a31434970508c5f"
+      },
+      {
+        "Answer": "2.07",
+        "QuestionId": "r5d211cd97c8340aaa888e87b72a5e28b"
+      },
+      {
+        "Answer": "Loại C",
+        "QuestionId": "r7e836b491a76476bba67d0704e4181cb"
+      },
+      {
+        "Answer": "GPA là điểm trung bình môn trong 1 học kỳ, CPA là điểm trung bình môn từ năm học thứ nhất",
+        "QuestionId": "r3d702675449141acb23d0e9d792d8713"
+      },
+      {
+        "Answer": "Cả 3 phương án trên",
+        "QuestionId": "r176f47ef7e194f3fbf18f59b4cbed03d"
+      },
+      {
+        "Answer": "Ban Công tác sinh viên",
+        "QuestionId": "r8c123c45ebcb43798e21dca87ec54270"
+      },
+      {
+        "Answer": "Sử dụng email nhà trường cấp (..@sis.hust.edu.vn)",
+        "QuestionId": "r132aa4e4f866481e903939466c6bd9bb"
+      },
+      {
+        "Answer": "[\"Số tín chỉ nợ (nếu có) tăng dần chứ không giảm\",\"Chậm tiến độ\",\"Kết quả học tập kém\"]",
+        "QuestionId": "r993be654ebd242bbb7b006947ec81041"
+      },
+      {
+        "Answer": "Được làm đơn xin rút và phải đóng học phí cho học phần được rút",
+        "QuestionId": "rf70cc5f582fe4ea6bf9f5f2c69789a15"
+      },
+      {
+        "Answer": "Đạo đức tốt, Học tập tốt, Tình nguyện tốt, Thể lực tốt, Hội nhập tốt",
+        "QuestionId": "red55edbfdc124a2b964fef2c35deb35f"
+      },
+      {
+        "Answer": "[\"Đăng ký học tập\",\"Đóng học phí\",\"Kiểm tra giữa kỳ\",\"Thi học kỳ\"]",
+        "QuestionId": "r92ec33cae3414225ae3850d9b79f3a72"
+      },
+      {
+        "Answer": "GPA≥3,6 ĐRL≥90",
+        "QuestionId": "r6c88647823f4406b859d9486594a9e55"
+      },
+      {
+        "Answer": "Xuất sắc, Tốt, Khá, Trung bình, Yếu, Kém",
+        "QuestionId": "r6208281755854a619d78a09ebdf256f2"
+      },
+      {
+        "Answer": "Sinh viên có thể tự lập kế hoạch học tập dựa trên \"Kế hoạch học tập chuẩn\"",
+        "QuestionId": "r30697e5f2d9345cb8c16737f98921624"
+      },
+      {
+        "Answer": "Điểm sẽ được tính sau khi thi bù",
+        "QuestionId": "r8f7d39877b374458a4240288842b488e"
+      },
+      {
+        "Answer": "Tất cả các dịch vụ trên đều được hỗ trợ cho sinh viên",
+        "QuestionId": "r99d951b577a44e2c95b3af73c48a48cb"
+      },
+      {
+        "Answer": "https://ctsv.hust.edu.vn/",
+        "QuestionId": "r536d28de44964a9380bc694580a34831"
+      },
+      {
+        "Answer": "[\"Phòng 202 nhà C1\",\"Phòng 201 nhà C1\"]",
+        "QuestionId": "r1490923c939947b0885d06133ca99519"
+      },
+      {
+        "Answer": "50% Nhu cầu thiết yếu, 20% Tiết kiệm, 30% Sở thích cá nhân",
+        "QuestionId": "rf3c0ae254ff94e86a2d62eec89e775f1"
+      },
+      {
+        "Answer": "Sinh viên đã đăng ký học phần trước",
+        "QuestionId": "rb2732c9b44b74ccbb6f8519f8b1d0d0c"
+      },
+      {
+        "Answer": "iCTSV",
+        "QuestionId": "r1bf7bd42988b4a44bcc19507d5309a65"
+      },
+      {
+        "Answer": "http://ctt-sis.hust.edu.vn",
+        "QuestionId": "r2bbd8561b9be498c9610166ff6c9eefa"
+      },
+      {
+        "Answer": "[\"Chỉ được phép mang ba lô, cặp sách vào các phòng tự học\",\"Đọc kỹ hướng dẫn, nội quy trước khi sử dụng​\",\"Quét thẻ tại cổng bảo vệ\",\"Mang sách ra quầy thủ thư để mượn và kiểm tra tài khoản​ (Phòng mượn)\"]",
+        "QuestionId": "r79253a57614445f781828b35785ab93c"
+      },
+      {
+        "Answer": "Bị cảnh cáo học tập mức 3 lần thứ hai",
+        "QuestionId": "r33f6f3be7a524d2f88370e218498d2fd"
+      },
+      {
+        "Answer": "Cả 3 phương án trên",
+        "QuestionId": "r1c7c0e00cf17437e8500f5ab804cb7b1"
+      },
+      {
+        "Answer": "Cả ba điều trên",
+        "QuestionId": "r862c4788be6e4688bc63db3b1ddded32"
+      },
+      {
+        "Answer": "HSSV có hoàn cảnh khó khăn sống trong hộ gia đình cư trú hợp pháp tại địa phương nơi cho vay.",
+        "QuestionId": "r1655c7f858404380b44eecf6d4d5668e"
+      },
+      {
+        "Answer": "3 giờ lý thuyết, 2 giờ bài tập, 0 giờ thực hành, 8 giờ tự học",
+        "QuestionId": "r63aca2dd35734c1ba2713bd48c565d0d"
+      },
+      {
+        "Answer": "Được đăng ký học tập trong cả 2 đợt: chính thức và điều chỉnh",
+        "QuestionId": "r6361d7e1e2d049c7928b55c1fb2f8265"
+      },
+      {
+        "Answer": "[\"App eHUST\",\"http://ctt.hust.edu.vn\"]",
+        "QuestionId": "r9476584fac9f4f78b103c6a5a81d6875"
+      },
+      {
+        "Answer": "Tổ Tư vấn và hỗ trợ sinh viên",
+        "QuestionId": "rbcdd092f07f64053b1ad9822c06c3b5d"
+      },
+      {
+        "Answer": "[\"Phòng 101-105 nhà C1\"]",
+        "QuestionId": "rf941f4afbf184ee293524c0849763425"
+      },
+      {
+        "Answer": "Báo với giảng viên và làm thủ tục xin hoãn thi",
+        "QuestionId": "r3fbdf50332c84eda99bdcd65a8739112"
+      },
+      {
+        "Answer": "4 năm",
+        "QuestionId": "rd3669226eb784fd680e0cb0e333b0d36"
+      },
+      {
+        "Answer": "Thứ 2 - 6: 8h00 – 21h00. Thứ 7- Chủ nhật: 8h00 – 16h00.",
+        "QuestionId": "rffb6eff8da4d491bb8f5fda12503adff"
+      },
+      {
+        "Answer": "Báo với giảng viên quản lý và Nộp đơn xin nghỉ dài hạn theo hướng dẫn của Ban Công tác sinh viên",
+        "QuestionId": "r2beb9972f0c84c0b8fa7c14e9d0cd503"
+      },
+      {
+        "Answer": "D8-403",
+        "QuestionId": "rfb87c0ffb2554723a39d0f1b60e8c8f0"
+      },
+      {
+        "Answer": "06",
+        "QuestionId": "r3dfa2a6e14314c7ea370a06a349e83e8"
+      },
+      {
+        "Answer": "Cả điểm quá trình và điểm thi cuối kỳ đều lớn hơn 3.0",
+        "QuestionId": "r3b0a05a4cb084fce9959795b688007de"
+      },
+      {
+        "Answer": "50% và 100%",
+        "QuestionId": "r5e4e987cb37c48a08e273d3277579923"
+      },
+      {
+        "Answer": "Phòng 905A – Thư viện Tạ Quang Bửu",
+        "QuestionId": "re8752159176a4911aa79799efb6967b7"
+      },
+      {
+        "Answer": "Điểm quá trình và điểm thi cuối kỳ",
+        "QuestionId": "r2492d10ea86d4f95838f85d64323b4b8"
+      },
+      {
+        "Answer": "Cột điểm GV chấm.",
+        "QuestionId": "r94ec22ae786c4a0a9fe264e3d15c08c2"
+      },
+      {
+        "Answer": "Loại B",
+        "QuestionId": "rec002cd0fcfb4c05952ec00d428a0332"
+      },
+      {
+        "Answer": "Thạc sĩ có định hướng nghiên cứu hàn lâm và phát triển, kỹ sư chuyên sâu nghề nghiệp",
+        "QuestionId": "r615abdcfb94d4be1bb52d5bc4e86ad8d"
+      },
+      {
+        "Answer": "Sau khi hoàn thành năm thứ nhất",
+        "QuestionId": "r1881497d79504f9fb73d641d2a546d46"
+      },
+      {
+        "Answer": "Học phần học trước, Học phần song hành, Học phần tiên quyết",
+        "QuestionId": "rdf8ad70c00c74e77a9e05b1083dd728c"
+      },
+      {
+        "Answer": "[\"Màu trắng: sách đọc tại các phòng.\",\"Màu vàng: sách tại các phòng mượn tham khảo.\",\"Màu tím: sách tại phòng mượn giáo trình.\",\"Màu xanh: sách tại phòng mượn giáo trình.\",\"Màu hồng: sách tra cứu/ từ điển tại các phòng đọc.\"]",
+        "QuestionId": "rbc78db177f4f4371bdef595fca4d0f71"
+      },
+      {
+        "Answer": "Thu thập, xác nhận tham gia hoạt động – Đánh giá kết quả điểm rèn luyện - Sử dụng kết quả điểm rèn luyện - Tự đánh giá kết quả điểm rèn luyện",
+        "QuestionId": "r339970569f184823a913044abff1b506"
+      },
+      {
+        "Answer": "[\"Tài năng cá nhân. Trí tuệ tập thể\",\"Tận tuỵ, Cống hiến\",\"Tôn trọng. Chính trực\",\"Kế thừa. Sáng tạo\",\"Chất lượng. Hiệu quả\"]",
+        "QuestionId": "rb06532c335114aa899ad7edcc882b178"
+      },
+      {
+        "Answer": "Xem xét xử lý tương đương mức cảnh báo học tập mức 2",
+        "QuestionId": "r07160395775141f1bdf1fd62ceec3b26"
+      },
+      {
+        "Answer": "Outlook, Teams",
+        "QuestionId": "ra77fdedb5ef44ea4830a1625859962d8"
+      },
+      {
+        "Answer": "Sinh viên không cần mặc đồng phục mọi lúc nhưng trang phục phù phải hợp với môi trường học tập; đồng thời yêu cầu sinh viên đeo thẻ sinh viên/học viên khi đi học và tới khu vực làm việc của nhà trường.",
+        "QuestionId": "r4bab43e99ba34999acae2bd5886f58fd"
+      },
+      {
+        "Answer": "1-3-5-2-4",
+        "QuestionId": "r6006e1d67e864e059c72002a5718c12b"
+      },
+      {
+        "Answer": "2/12/2022",
+        "QuestionId": "r9a701cbedffe4b349b5f3b19c2bafdfc"
+      },
+      {
+        "Answer": "132",
+        "QuestionId": "r8ef5b9fa9e5c44b2ab4ce4ffc1d7e1a3"
+      },
+      {
+        "Answer": "Điểm quá trình < 3.0, Điểm cuối kỳ < 3.0.",
+        "QuestionId": "r743c47716f544afa8876af5ab78f3bb3"
+      },
+      {
+        "Answer": "[\"Đào tạo cử nhân 4 năm, đào tạo và cấp bằng thạc sỹ.\"]",
+        "QuestionId": "r39397b4eaa4449ad8620a0cc964851b0"
+      },
+      {
+        "Answer": "Điểm quá trình chiếm 0,2-0,5 và điểm thi cuối kì chiếm 0,5-0,8.",
+        "QuestionId": "rd2ecb6119cd941e8a8d627e4987274fe"
+      },
+      {
+        "Answer": "3-4 tuần sau khi kết thúc thi cuối kì.",
+        "QuestionId": "r6063024c29f749e183d60976bef2cb6a"
+      },
+      {
+        "Answer": "GPA từ 3.6, điểm rèn luyện từ 90.",
+        "QuestionId": "r985264cf1c5d463cad87feaec1216e37"
+      },
+      {
+        "Answer": "Sinh viên có hoàn cảnh khó khăn, có nghị lực vươn lên trong cuộc sống nhưng chưa nhận được nguồn hỗ trợ nào.",
+        "QuestionId": "rcdb9fe36895e4056b8b22922c19d52bd"
+      },
+      {
+        "Answer": "Sinh viên được hỗ trợ 5-10 triệu đồng.",
+        "QuestionId": "rbb60dc2904e54b43b64eb02b7323e92d"
+      },
+      {
+        "Answer": "Mức vay tối đa: 4 triệu đồng/ tháng x 10 tháng/năm học.",
+        "QuestionId": "rd74b2e0c843c46c7a62327a47d272620"
+      },
+      {
+        "Answer": "[\"Học bổng Khuyến khích học tập\",\"Học bổng Trần Đại Nghĩa\",\"Học bổng Gắn kết Quê hương\"]",
+        "QuestionId": "r1c85be1994d542b4be5efb9f4c728c53"
+      },
+      {
+        "Answer": "Ban Đào tạo",
+        "QuestionId": "r63010eaaa71b4567b750dc28aae170fe"
+      },
+      {
+        "Answer": "4.000.000đ/tháng/sinh viên",
+        "QuestionId": "r7f0fa880229a4fc0b111fef88dd9c932"
+      },
+      {
+        "Answer": "6,6%/năm",
+        "QuestionId": "r66135157f2d0415ba165f62bac86f540"
+      },
+      {
+        "Answer": "Truy cập ctt.hust.edu.vn – Chọn “Đăng nhập” – Chọn “Quên mật khẩu” – Điền thông tin form đăng ký và gửi thông tin.",
+        "QuestionId": "r72f499d4fe514fd8bad978c14c8354d7"
+      },
+      {
+        "Answer": "[\"WiFi HUST\",\"LMS\",\"eHUST\",\"Office 365\",\"Hỗ trợ kỹ thuật\"]",
+        "QuestionId": "rbae6f75768ec41aea99d2dc658d5abac"
+      },
+      {
+        "Answer": "[\"Đọc tại chỗ, mượn về nhà.\",\"Truy cập tài nguyên điện tử.\",\"Tiện ích khác (Phòng tự học, …)\"]",
+        "QuestionId": "r59cecf4edc364180b94644ef630aaa6a"
+      },
+      {
+        "Answer": "https://library.hust.edu.vn/",
+        "QuestionId": "r1796d2b33b99489a8f031cfa14036316"
+      },
+      {
+        "Answer": "Lời chào, Nội dung chính, Lời chúc/ lời cảm ơn và ký tên",
+        "QuestionId": "r6f8ce8781a344e9da4769045e5e4a331"
+      },
+      {
+        "Answer": "Cả A và C",
+        "QuestionId": "r953fce4a872a45e5b1f875e951707cf6"
+      },
+      {
+        "Answer": "Điểm trung bình tích luỹ từ khi vào trường",
+        "QuestionId": "r2bc305d8527e490aa5b2def8a0a98996"
+      },
+      {
+        "Answer": "GPA ≥ 3,2; Điểm RL ≥ 80 ",
+        "QuestionId": "r955f7dccbd8b4c028278af866e3efffc"
+      },
+      {
+        "Answer": "https://hust.edu.vn/vi/sinh-vien/ho-tro-sinh-vien/nhung-dieu-sinh-vien-can-biet-645447.html",
+        "QuestionId": "r4b0dc375303f4e828c2da337f301b2be"
+      },
+      {
+        "Answer": "Trở thành nhà nghiên cứu ",
+        "QuestionId": "rcdb327dbd63f44fa93855ec4e08e630c"
+      },
+      {
+        "Answer": "Trở thành chuyên gia, bậc thầy công nghệ",
+        "QuestionId": "recd6272b016e4182bc6c17d2fe11aa59"
+      },
+      {
+        "Answer": "Trở thành nhà sáng lập doanh nghiệp",
+        "QuestionId": "r3d1af7b4eb5240508f696ac3c419fb0c"
+      },
+      {
+        "Answer": "Đi làm kỹ thuật, chuyên gia thực việc",
+        "QuestionId": "r94e62b85f1594825a86d4a7f54faf179"
+      },
+      {
+        "Answer": "Có ý thức, trách nhiệm bảo vệ danh tiếng và tài sản của Nhà trường.",
+        "QuestionId": "r8a4cd65cd2cf44acad2710ab51b44c58"
+      },
+      {
+        "Answer": "Làm quen với môi trường đại học; Xây dựng nền tảng học tập; Phát triển kỹ năng mềm, ngoại ngữ; Khám phá các cơ hội nghề nghiệp.",
+        "QuestionId": "r4f8ae0acd9704fe2ac3fe9eb90af805c"
+      },
+      {
+        "Answer": "Tập trung chuyên ngành, Tham gia thực tập/ trao đổi sinh viên, Phát triển kỹ năng lãnh đạo, Mở rộng mạng lưới quan hệ.",
+        "QuestionId": "r3eeb13d2cee94540ba5b8e01ce9688d9"
+      },
+      {
+        "Answer": "Học chuyên ngành, Tham gia các lab/dự án, Phát triển kỹ năng chuyên môn, Xây dựng hồ sơ cá nhân.",
+        "QuestionId": "r6c33ce09c9ec48ac9d666efacd2f8d58"
+      },
+      {
+        "Answer": "Hoàn thiện kỹ năng mềm và chuyên môn, ngoại ngữ, Đồ án tốt nghiệp, Tìm việc/ học bổng ĐH/ Quỹ đầu tư…",
+        "QuestionId": "rceb8d1316b4a4f0880ff7696de869c3e"
       }
     ],
     "AnswerType2": [
       {
         "Answer": [
-          "1"
+          "GPA từ 3.6, điểm rèn luyện từ 90."
         ],
-        "Question": "1+1"
+        "Question": "Điều kiện được xét học bổng loại A là gì:"
       },
       {
         "Answer": [
-          "1"
+          "2 tuần sau khi kết thúc thi học kỳ"
         ],
-        "Question": "1*1"
-      }
-    ],
-    "Info": "Nội dung mô tả số 1",
-    "Name": "BÀI TEST PHẦN MỀM SỐ 1",
-    "Url": "https://forms.office.com/Pages/ResponsePage.aspx?id=n7jxBugHT0a0COwbRXA_MVvZ93rF6jhKrwsuguY1O_lUMTMwRTlSNUxOOFhFUVA1QVVUSkxFWDNEMi4u"
-  },
-  {
-    "AnswerType1": [
-      {
-        "Answer": "2",
-        "QuestionId": "rb37a5c0c5d27476ea81f83e303393326"
-      },
-      {
-        "Answer": "1",
-        "QuestionId": "r8257f4de2fff4187b461c69593fabcb1"
-      }
-    ],
-    "AnswerType2": [
-      {
-        "Answer": [
-          "2"
-        ],
-        "Question": "1+1"
+        "Question": "Kết quả học tập sẽ được cập nhật vào khoảng thời gian nào?"
       },
       {
         "Answer": [
-          "1"
+          "Hoàn thiện kỹ năng mềm và chuyên môn, ngoại ngữ, Đồ án tốt nghiệp, Tìm việc/ học bổng ĐH/ Quỹ đầu tư…"
         ],
-        "Question": "1*1"
+        "Question": "Theo định hướng của Ban Giám đốc Đại học với sinh viên NĂM THỨ TƯ, bạn nên làm gì?!"
+      },
+      {
+        "Answer": [],
+        "Question": "Đường link của trang thông tin \"Những điều tân sinh viên cần biết\" là gì?"
+      },
+      {
+        "Answer": [
+          "Trình độ năm thứ nhất nếu số tín chỉ tích lũy <32"
+        ],
+        "Question": "Sinh viên được xếp hạng trình độ năm thứ nhất căn cứ số tín chỉ tích lũy như thế nào?"
+      },
+      {
+        "Answer": [
+          "Sinh viên được hỗ trợ 5-10 triệu đồng."
+        ],
+        "Question": "Chính sách của Đại học Bách Khoa Hà Nội khi hỗ trợ sinh viên khó khăn, rủi do đột xuất là gì:"
+      },
+      {
+        "Answer": [
+          "50% và 100%"
+        ],
+        "Question": "Học bổng Trần Đại Nghĩa dành cho sinh viên có hoàn cảnh kinh tế khó khan, có nghị lực vươn lên trong cuộc sống có 2 mức học bổng, đó là những mức nào?"
+      },
+      {
+        "Answer": [
+          "2.07"
+        ],
+        "Question": "Cho hai học phần MI1010 3(3-2-0-6) và MI1110 4(3-2-0-8) với số điểm lần lượt là B+ và D. Hỏi GPA của 2 học phần này là bao nhiêu?"
+      },
+      {
+        "Answer": [
+          "Xuất sắc, Tốt, Khá, Trung bình, Yếu, Kém"
+        ],
+        "Question": "Điểm rèn luyện được xếp loại theo cách nào dưới đây?"
+      },
+      {
+        "Answer": [
+          "HSSV có hoàn cảnh khó khăn sống trong hộ gia đình cư trú hợp pháp tại địa phương nơi cho vay."
+        ],
+        "Question": "HSSV nào sau đây thuộc một trong các đối tượng được vay vốn?"
+      },
+      {
+        "Answer": [
+          "Lời chào, Nội dung chính, Lời chúc/ lời cảm ơn và ký tên"
+        ],
+        "Question": "Nhập địa chỉ người nhận – Đặt tiêu đề - Đính kèm file – Viết nội dung"
+      },
+      {
+        "Answer": [
+          "Bị cảnh cáo học tập mức 3 lần thứ hai"
+        ],
+        "Question": "Sinh viên sẽ bị xem xét buộc thôi học nếu?"
+      },
+      {
+        "Answer": [
+          "Chỉ tại các phòng 102 – 104 tòa nhà C1",
+          "Chỉ qua Email: ctsv@hust.edu.vn",
+          "Chỉ thông qua FB: www.fb.com/ctsv.hust.edu.vn"
+        ],
+        "Question": "Ban Công tác Sinh viên sẽ tiếp nhận và giải đáp thắc mắc của sinh viên tại địa chỉ nào?"
+      },
+      {
+        "Answer": [
+          "dt@hust.edu.vn"
+        ],
+        "Question": "Địa chỉ email của Ban Đào tạo ?"
+      },
+      {
+        "Answer": [
+          "iCTSV"
+        ],
+        "Question": "Ứng dụng hỗ trợ sinh viên theo dõi các hoạt động ngoại khóa, báo cáo minh chứng, đánh giá và xem kết quả rèn luyện là?"
+      },
+      {
+        "Answer": [
+          "Tổ Tư vấn và hỗ trợ sinh viên"
+        ],
+        "Question": "Địa chỉ email ssu@hust.edu.vn là địa chỉ tiếp nhận thông tin của đơn vị nào dưới đây?"
+      },
+      {
+        "Answer": [
+          "Cả ba điều trên"
+        ],
+        "Question": "Học đại học có khác gì so với THPT"
+      },
+      {
+        "Answer": [
+          "Ban Công tác sinh viên"
+        ],
+        "Question": "Nộp hồ sơ chế độ chính sách miễn giảm học phí tại đâu?"
+      },
+      {
+        "Answer": [
+          "Học bổng Khuyến khích học tập",
+          "Học bổng Trần Đại Nghĩa",
+          "Học bổng Gắn kết Quê hương"
+        ],
+        "Question": "Hãy chọn các học bổng cho sinh viên của Đại học Bách khoa Hà Nội:"
+      },
+      {
+        "Answer": [
+          "Trở thành nhà nghiên cứu"
+        ],
+        "Question": "Trong phần nói chuyện của Ban Giám đốc đại học, hình ảnh chú CÁ HEO minh hoa cho định hướng phát triển sau tốt nghiệp"
+      },
+      {
+        "Answer": [
+          "Số tín chỉ nợ (nếu có) tăng dần chứ không giảm",
+          "Chậm tiến độ",
+          "Kết quả học tập kém"
+        ],
+        "Question": "Đăng ký học tập không phù hợp có thể dẫn đến hậu quả như thế nào?"
+      },
+      {
+        "Answer": [
+          "Sử dụng email nhà trường cấp (..@sis.hust.edu.vn)"
+        ],
+        "Question": "Yêu cầu bắt buộc đối với sinh viên khi gửi email thắc mắc vấn đề như đăng ký học tập, chuyển điểm tương đương/thay thế, học phí... là?"
+      },
+      {
+        "Answer": [
+          "Cả A và C"
+        ],
+        "Question": "Mức học bổng loại B có giá trị?"
+      },
+      {
+        "Answer": [
+          "Đào tạo cử nhân 4 năm, đào tạo và cấp bằng thạc sỹ."
+        ],
+        "Question": "Mô hình đào tạo của Đại học Bách Khoa Hà Nội là gì:"
+      },
+      {
+        "Answer": [
+          "Điểm sẽ được tính sau khi thi bù"
+        ],
+        "Question": "Khi xin hoãn thi cuối kỳ, điểm của sinh viên sẽ được tính như thế nào?"
+      },
+      {
+        "Answer": [
+          "8.5-9.4"
+        ],
+        "Question": "Quy đổi theo thang 10, điểm A là bao nhiêu điểm?"
+      },
+      {
+        "Answer": [
+          "2000 - 2006"
+        ],
+        "Question": "Đại học Bách Khoa Hà Nội được phong danh hiệu Anh hùng Lao động thời kỳ đổi mới năm _________, Anh hùng lực lượng vũ trang nhân dân vào năm__________"
+      },
+      {
+        "Answer": [
+          "Học phần học trước, Học phần song hành, Học phần tiên quyết"
+        ],
+        "Question": "Một môn học có thể có các điều kiện học phần nào"
+      },
+      {
+        "Answer": [
+          "https://lms.hust.edu.vn"
+        ],
+        "Question": "Đường link truy cập Hệ thống BK-Elearning là?"
+      },
+      {
+        "Answer": [
+          "Ban Đào tạo"
+        ],
+        "Question": "Đâu là nơi cung cấp kết quả GPA, điểm Ngoại Ngữ, mức cảnh báo học tập:"
+      },
+      {
+        "Answer": [
+          "4 năm"
+        ],
+        "Question": "Thời gian đào tạo chuẩn của bậc Cử nhân là bao lâu?"
+      },
+      {
+        "Answer": [
+          "6,6%/năm"
+        ],
+        "Question": "Lãi suất cho vay trong hạn là bao nhiêu:"
+      },
+      {
+        "Answer": [
+          "Sinh viên có thể tự lập kế hoạch học tập dựa trên \"Kế hoạch học tập chuẩn\""
+        ],
+        "Question": "Ưu điểm nào sau đây là đặc trưng của chương trình đào tạo theo tín chỉ?"
+      },
+      {
+        "Answer": [
+          "Phòng 905A – Thư viện Tạ Quang Bửu"
+        ],
+        "Question": "Khi gặp vấn đề về tài khoản email bạn liên lạc với Trung tâm Chuyển đổi số tại phòng nào?"
+      },
+      {
+        "Answer": [
+          "3-4 tuần sau khi kết thúc thi cuối kì."
+        ],
+        "Question": "Kết quả học tập sẽ được cập nhật sau bao lâu:"
+      },
+      {
+        "Answer": [
+          "50% Nhu cầu thiết yếu, 20% Tiết kiệm, 30% Sở thích cá nhân"
+        ],
+        "Question": "Phương pháp quản lý chi tiêu 50-20-30 với sinh viên?"
+      },
+      {
+        "Answer": [
+          "dtn@hust.edu.vn"
+        ],
+        "Question": "Địa chỉ email của Văn phòng Đoàn Thanh niên là?"
+      },
+      {
+        "Answer": [
+          "Có ý thức, trách nhiệm bảo vệ danh tiếng và tài sản của Nhà trường."
+        ],
+        "Question": "Trong \"6 QUY TẮC VĂN HÓA GIAO TIẾP TRONG NHÀ TRƯỜNG VÀ MÔI TRƯỜNG MẠNG\"  quy tắc thứ 6 là"
+      },
+      {
+        "Answer": [
+          "Làm quen với môi trường đại học; Xây dựng nền tảng học tập; Phát triển kỹ năng mềm, ngoại ngữ; Khám phá các cơ hội nghề nghiệp."
+        ],
+        "Question": "Theo định hướng của Ban Giám đốc Đại học với sinh viên NĂM THỨ NHẤT, bạn nên làm gì?!"
+      },
+      {
+        "Answer": [
+          "Sinh viên đã đăng ký học phần trước"
+        ],
+        "Question": "Việc đăng ký lớp học chính thức có ưu tiên cho đối tượng nào?"
+      },
+      {
+        "Answer": [
+          "Phòng 101-105 nhà C1"
+        ],
+        "Question": "Địa chỉ Ban Công tác Sinh viên của Đại học Bách Khoa Hà Nội?"
+      },
+      {
+        "Answer": [
+          "Điểm quá trình chiếm 0,2-0,5 và điểm thi cuối kì chiếm 0,5-0,8."
+        ],
+        "Question": "Phương thức đánh giá kết quả học tập:"
+      },
+      {
+        "Answer": [
+          "Điểm trung bình tích luỹ từ khi vào trường"
+        ],
+        "Question": "CPA là gì?"
+      },
+      {
+        "Answer": [
+          "Báo với giảng viên quản lý và Nộp đơn xin nghỉ dài hạn theo hướng dẫn của Ban Công tác sinh viên"
+        ],
+        "Question": "Nghỉ dài hạn do lý do bất khả kháng (ốm đau, điều trị dài ngày..) cần làm gì?"
+      },
+      {
+        "Answer": [
+          "Điểm quá trình < 3.0, Điểm cuối kỳ < 3.0."
+        ],
+        "Question": "Dựa trên đánh giá kết quả học tập, quy định về điểm liệt như nào:"
+      },
+      {
+        "Answer": [
+          "Trở thành chuyên gia, bậc thầy công nghệ"
+        ],
+        "Question": "Trong phần nói chuyện của Ban Giám đốc đại học, hình ảnh chú CÁ VOI minh hoa cho định hướng phát triển sau tốt nghiệp"
+      },
+      {
+        "Answer": [
+          "Đăng ký học tập",
+          "Đóng học phí",
+          "Kiểm tra giữa kỳ",
+          "Thi học kỳ"
+        ],
+        "Question": "Những công việc sinh viên BẮT BUỘC phải làm trong học kỳ?"
+      },
+      {
+        "Answer": [
+          "10 – 6 – 3"
+        ],
+        "Question": "Đại học Bách Khoa Hà Nội có ___ Viện/Trung tâm nghiên cứu, ___ Trường/Khoa và ___ Khoa đào tạo cơ bản"
+      },
+      {
+        "Answer": [
+          "Khi đủ 2 học kỳ liên tiếp dưới 50đ."
+        ],
+        "Question": "Theo quy định, khi nào sinh viên sẽ hội tụ đủ yếu tố về điểm rèn luyện để Hội đồng kỷ luật nhà trường xem xét hình thức kỷ luật nâng cảnh báo học tập lên mức 2 ?"
+      },
+      {
+        "Answer": [
+          "Tài năng cá nhân. Trí tuệ tập thể",
+          "Tận tuỵ, Cống hiến",
+          "Tôn trọng. Chính trực",
+          "Kế thừa. Sáng tạo",
+          "Chất lượng. Hiệu quả"
+        ],
+        "Question": "Những giá trị cốt lõi Đại học Bách khoa từ góc nhìn văn hoá?"
+      },
+      {
+        "Answer": [
+          "Bắt đầu từ học kỳ thứ 3"
+        ],
+        "Question": "Khi nào sinh viên phải hoàn toàn tự đăng ký lớp?"
+      },
+      {
+        "Answer": [
+          "Cả 3 phương án trên"
+        ],
+        "Question": "Mục tiêu của việc đánh giá điểm rèn luyện mỗi kì đối với sinh viên"
+      },
+      {
+        "Answer": [
+          "Sinh viên có hoàn cảnh khó khăn, có nghị lực vươn lên trong cuộc sống nhưng chưa nhận được nguồn hỗ trợ nào."
+        ],
+        "Question": "Đối tượng được xét học bổng Trần Đại Nghĩa là những ai:"
+      },
+      {
+        "Answer": [
+          "https://ctt.hust.edu.vn/"
+        ],
+        "Question": "Địa chỉ của Cổng thông tin sinh viên?"
+      },
+      {
+        "Answer": [
+          "Thạc sĩ có định hướng nghiên cứu hàn lâm và phát triển, kỹ sư chuyên sâu nghề nghiệp"
+        ],
+        "Question": "Chương trình đào tạo thạc sĩ khác với chương trình kỹ sư ở điểm nào sau đây?"
+      },
+      {
+        "Answer": [
+          "Được đăng ký học tập trong cả 2 đợt: chính thức và điều chỉnh"
+        ],
+        "Question": "Sinh viên sau khi đăng ký học phần sẽ được gì dưới đây?"
+      },
+      {
+        "Answer": [
+          "Ngày Mùng 1 Tết Mậu Tuất 1958",
+          "Ngày 17/06/1960",
+          "Ngày 11/03/1962"
+        ],
+        "Question": "Trong những ngày dưới đây, Bác Hồ đã về thăm trường ta vào các ngày nào?"
+      },
+      {
+        "Answer": [
+          "Mức vay tối đa: 4 triệu đồng/ tháng x 10 tháng/năm học.",
+          "Mức vay tối đa: 4 triệu đồng/ tháng x 10 tháng/năm học."
+        ],
+        "Question": "Chính sách hỗ trợ vay vốn ngân hàng cho sinh viên là gì:"
+      },
+      {
+        "Answer": [
+          "4.000.000đ/tháng/sinh viên"
+        ],
+        "Question": "Mức cho vay tối đa đối với HSSV là:"
+      },
+      {
+        "Answer": [
+          "https://www.facebook.com/dhbkhanoi"
+        ],
+        "Question": "Địa chỉ fanpage của Đại học Bách khoa Hà Nội là?"
+      },
+      {
+        "Answer": [
+          "Xem xét xử lý tương đương mức cảnh báo học tập mức 2"
+        ],
+        "Question": "Theo quy chế, sinh viên bị xếp loại rèn luyện yếu, kém hai học kỳ liên tiếp sẽbị xử lý như thế nào"
+      },
+      {
+        "Answer": [
+          "[Tình trạng] Tiêu đề email."
+        ],
+        "Question": "Nếu muốn thể hiện tình trạng của email bạn nên dung cú pháp nào?"
+      },
+      {
+        "Answer": [
+          "2/12/2022"
+        ],
+        "Question": "“Trường Đại học Bách Khoa Hà Nội” được mang tên mới là “Đại học Bách Khoa Hà Nội” từ ngày nào?"
+      },
+      {
+        "Answer": [
+          "Loại C"
+        ],
+        "Question": "Một sinh viên có điểm trung bình tích lũy là 3.74 và điểm rèn luyện là 70. Sinh viên này có đủ điều kiện để xin học bổng khuyến khích học tập loại nào?"
+      },
+      {
+        "Answer": [
+          "Thu thập, xác nhận tham gia hoạt động – Đánh giá kết quả điểm rèn luyện - Sử dụng kết quả điểm rèn luyện - Tự đánh giá kết quả điểm rèn luyện"
+        ],
+        "Question": "Đâu là quy trình đánh giá kết quả điểm rèn luyện của sinh viên?"
+      },
+      {
+        "Answer": [
+          "GPA ≥ 3,2; Điểm RL ≥ 80"
+        ],
+        "Question": "Điều kiện xét tuyển học bổng loại B:"
+      },
+      {
+        "Answer": [
+          "Điểm quá trình và điểm thi cuối kỳ"
+        ],
+        "Question": "Điểm của học phần được tính dựa trên những yếu tố nào?"
+      },
+      {
+        "Answer": [
+          "Được làm đơn xin rút và phải đóng học phí cho học phần được rút"
+        ],
+        "Question": "Sau thời gian điều chỉnh đăng ký, sinh viên có thể làm đơn xin rút học phần để không tính kết quả học tập không?"
+      },
+      {
+        "Answer": [
+          "GPA≥3,6 ĐRL≥90"
+        ],
+        "Question": "Điều kiện cần để đạt học bổng loại A là gì?"
+      },
+      {
+        "Answer": [
+          "Toàn diện",
+          "Hợp lý",
+          "Nổi bật trọng điểm",
+          "Dành khoảng thời gian trống"
+        ],
+        "Question": "Quy tắc sắp xếp thời gian Khoa học"
+      },
+      {
+        "Answer": [
+          "http://ctt-sis.hust.edu.vn"
+        ],
+        "Question": "Sinh viên có thể xem tổng số tiền học phí phải đóng trong một kỳ học ở đâu"
+      },
+      {
+        "Answer": [
+          "Chỉ được phép mang ba lô, cặp sách vào các phòng tự học",
+          "Đọc kỹ hướng dẫn, nội quy trước khi sử dụng​",
+          "Quét thẻ tại cổng bảo vệ",
+          "Mang sách ra quầy thủ thư để mượn và kiểm tra tài khoản​ (Phòng mượn)"
+        ],
+        "Question": "Một số điều sinh viên cần ghi nhớ khi vào thư viện?"
+      },
+      {
+        "Answer": [
+          "Cột điểm GV chấm."
+        ],
+        "Question": "Mục chấm điểm rèn luyện có 2 cột điểm SV chấm và điểm GV chấm, vậy điểm chốt tính theo điểm nào?"
+      },
+      {
+        "Answer": [
+          "Giáo viên chấm điểm theo khung điểm, kết quả tự đánh giá và minh chứng",
+          "Thực hiện trên hệ thống sổ tay sinh viên Online (Web/App)",
+          "Cách thức đánh giá bao gồm cả ba phương án trên",
+          "Sinh viên tự đánh giá theo các minh chứng tham gia hoạt động tích lũy được"
+        ],
+        "Question": "Cách thức đánh giá điểm rèn luyện của Đại học Bách Khoa Hà Nội là gì?"
+      },
+      {
+        "Answer": [
+          "Mua và sử dụng các chất kích thích, ma túy, đồ chơi tiêu khiển vì mục đích mua vui cho bản thân, cá nhân"
+        ],
+        "Question": "Vốn vay không được phép sử dụng vào mục đích nào?"
+      },
+      {
+        "Answer": [
+          "Màu trắng: sách đọc tại các phòng.",
+          "Màu vàng: sách tại các phòng mượn tham khảo.",
+          "Màu tím: sách tại phòng mượn giáo trình.",
+          "Màu xanh: sách tại phòng mượn giáo trình.",
+          "Màu hồng: sách tra cứu/ từ điển tại các phòng đọc."
+        ],
+        "Question": "Các màu nhãn sách tại Trung tâm truyền thông và tri thức số là:"
+      },
+      {
+        "Answer": [
+          "Báo với giảng viên và làm thủ tục xin hoãn thi"
+        ],
+        "Question": "Nếu một sinh viên bị ốm nặng và phải nhập viện trong thời gian thi cuối kỳ, sinh viên đó nên làm gì?"
+      },
+      {
+        "Answer": [
+          "1-3-2-5-4"
+        ],
+        "Question": "Sắp xếp lại các bước cài đặt mật khẩu tài khoản OPAC:"
+      },
+      {
+        "Answer": [
+          "132"
+        ],
+        "Question": "Số lượng tín chỉ tích lũy tối thiểu của bậc đào tạo Cử nhân là?"
+      },
+      {
+        "Answer": [
+          "Loại B"
+        ],
+        "Question": "Một sinh viên có điểm trung bình tích lũy là 3.4 và điểm rèn luyện là 95. Sinh viên này có đủ điều kiện để xin học bổng khuyến khích học tập loại nào?"
+      },
+      {
+        "Answer": [
+          "Outlook, Teams"
+        ],
+        "Question": "Đâu là các ứng dụng Office 365 trong tài khoản được cấp cho sinh viên?"
+      },
+      {
+        "Answer": [
+          "Sau khi hoàn thành năm thứ nhất"
+        ],
+        "Question": "Sinh viên bắt đầu được xem xét chuyển ngành từ khi nào?"
+      },
+      {
+        "Answer": [
+          "https://ctsv.hust.edu.vn/"
+        ],
+        "Question": "Địa chỉ của Sổ tay công tác sinh viên Online?"
+      },
+      {
+        "Answer": [
+          "https://library.hust.edu.vn/"
+        ],
+        "Question": "Cổng thông tin Trung tâm Truyền thông và Tri thức số là:"
+      },
+      {
+        "Answer": [
+          "8.3"
+        ],
+        "Question": "Một môn học có trọng số KT(0.3)-T(0.7) và có điểm thi giữa kỳ (đã cộng) là 9đ, điểm thi cuối kỳ là 8đ. Hỏi điểm tổng kết là bao nhiêu?"
+      },
+      {
+        "Answer": [
+          "Đi làm kỹ thuật, chuyên gia thực việc"
+        ],
+        "Question": "Trong phần nói chuyện của Ban Giám đốc đại học, hình ảnh chú CÁ NGỪ minh hoa cho định hướng phát triển sau tốt nghiệp"
+      },
+      {
+        "Answer": [
+          "Thường vào 2 tuần 5-6 của học kỳ hiện tại"
+        ],
+        "Question": "Khi nào sinh viên cần đăng ký kế hoạch học tập cho kỳ tới?"
+      },
+      {
+        "Answer": [
+          "Tập trung chuyên ngành, Tham gia thực tập/ trao đổi sinh viên, Phát triển kỹ năng lãnh đạo, Mở rộng mạng lưới quan hệ."
+        ],
+        "Question": "Theo định hướng của Ban Giám đốc Đại học với sinh viên NĂM THỨ HAI, bạn nên làm gì?!"
+      },
+      {
+        "Answer": [
+          "Học chuyên ngành, Tham gia các lab/dự án, Phát triển kỹ năng chuyên môn, Xây dựng hồ sơ cá nhân."
+        ],
+        "Question": "Theo định hướng của Ban Giám đốc Đại học với sinh viên NĂM THỨ BA, bạn nên làm gì?!"
+      },
+      {
+        "Answer": [
+          "http://libopac.hust.edu.vn/"
+        ],
+        "Question": "Đâu là trang tra cứu OPAC:"
+      },
+      {
+        "Answer": [
+          "Cả 3 phương án trên"
+        ],
+        "Question": "Theo khung đánh giá kết quả rèn luyện sinh viên năm 2024-2025, sinh viên bị trừ điểm nếu viphạm các quy định nào?"
+      },
+      {
+        "Answer": [
+          "D8-403"
+        ],
+        "Question": "Địa chỉ bạn cần đến để được hỗ trợ, tư vấn về học tập và tâm lý khi gặp khó khăn là?"
+      },
+      {
+        "Answer": [
+          "Tất cả các dịch vụ trên đều được hỗ trợ cho sinh viên"
+        ],
+        "Question": "Một số dịch vụ CNTT khi theo học tại Đại học Bách Khoa Hà Nội?"
+      },
+      {
+        "Answer": [
+          "1-3-5-2-4"
+        ],
+        "Question": "Các bước viết email:"
+      },
+      {
+        "Answer": [
+          "Sinh viên không cần mặc đồng phục mọi lúc nhưng trang phục phù phải hợp với môi trường học tập; đồng thời yêu cầu sinh viên đeo thẻ sinh viên/học viên khi đi học và tới khu vực làm việc của nhà trường."
+        ],
+        "Question": "Quy định về trang phục đối với sinh viên tại Đại học Bách Khoa Hà Nội ?"
+      },
+      {
+        "Answer": [
+          "Truy cập ctt.hust.edu.vn – Chọn “Đăng nhập” – Chọn “Quên mật khẩu” – Điền thông tin form đăng ký và gửi thông tin."
+        ],
+        "Question": "Các bước đăng ký mới hoặc reset lại mật khẩu bị mất là:"
+      },
+      {
+        "Answer": [
+          "Cả điểm quá trình và điểm thi cuối kỳ đều lớn hơn 3.0"
+        ],
+        "Question": "Để một học phần không bị điểm liệt, điều kiện nào sau đây phải được đáp ứng?"
+      },
+      {
+        "Answer": [
+          "Trung tâm Dịch vụ và Hỗ trợ Bách khoa"
+        ],
+        "Question": "Sinh viên nạp tiền thẻ gửi xe đạp/ xe máy ở đâu"
+      },
+      {
+        "Answer": [
+          "100 – 50"
+        ],
+        "Question": "Trong một kì học tại Đại học Bách Khoa Hà Nội, mỗi sinh viên có thể đạt được tối đa ___ điểm rèn luyện và nếu vi phạm sẽ bị trừ tối đa ___ điểm rèn luyện."
+      },
+      {
+        "Answer": [
+          "WiFi HUST",
+          "LMS",
+          "eHUST",
+          "Office 365",
+          "Hỗ trợ kỹ thuật"
+        ],
+        "Question": "Một số dịch vụ CNTT miễn phí trong thời gian sinh viên học tập tại Đại học Bách khoa Hà Nội là:"
+      },
+      {
+        "Answer": [
+          "Thứ 2 - 6: 8h00 – 21h00. Thứ 7- Chủ nhật: 8h00 – 16h00."
+        ],
+        "Question": "Giờ phục vụ của 4 phòng đọc chuyên ngành và các phòng tự học với các phòng luận văn, 2 phòng mượn về nhà là:"
+      },
+      {
+        "Answer": [
+          "App eHUST",
+          "http://ctt.hust.edu.vn"
+        ],
+        "Question": "Sinh viên có thể xem thời khóa biểu trong một kỳ học ở đâu?"
+      },
+      {
+        "Answer": [
+          "3 giờ lý thuyết, 2 giờ bài tập, 0 giờ thực hành, 8 giờ tự học"
+        ],
+        "Question": "Cho học phần MI1026 với khối lượng như sau 4(3-2-0-8). Những số trong ngoặc đơn thể hiện số giờ trong 1 tuần theo thứ tự từ trái sang phải đúng là?"
+      },
+      {
+        "Answer": [
+          "Trọng số của điểm kiểm tra giữa kỳ là 0,4, cuối kỳ là 0,6"
+        ],
+        "Question": "Một môn học có trọng số KT(0,4)-T(0,6) nghĩa là môn học đó có"
+      },
+      {
+        "Answer": [
+          "Trở thành nhà sáng lập doanh nghiệp"
+        ],
+        "Question": "Trong phần nói chuyện của Ban Giám đốc đại học, hình ảnh chú CÁ MẬP minh hoa cho định hướng phát triển sau tốt nghiệp"
+      },
+      {
+        "Answer": [
+          "Phòng 202 nhà C1",
+          "Phòng 201 nhà C1"
+        ],
+        "Question": "Địa chỉ Ban Đào tạo?"
+      },
+      {
+        "Answer": [
+          "Đọc tại chỗ, mượn về nhà.",
+          "Truy cập tài nguyên điện tử.",
+          "Tiện ích khác (Phòng tự học, …)"
+        ],
+        "Question": "Các dịch vụ tại thư viện Tạ Quang Bửu:"
+      },
+      {
+        "Answer": [
+          "Đạo đức tốt, Học tập tốt, Tình nguyện tốt, Thể lực tốt, Hội nhập tốt"
+        ],
+        "Question": "Bạn hãy cho biết để đạt được Danh hiệu Sinh viên 5 tốt, bạn cần đáp ứng đủ những tiêu chí nào sau đây?"
+      },
+      {
+        "Answer": [
+          "Đăng ký lớp cho các môn đã chọn trong kỳ tới"
+        ],
+        "Question": "Sau khi kết thúc kỳ học, sinh viên cần thực hiện nhiệm vụ nào sau đây?"
+      },
+      {
+        "Answer": [
+          "06"
+        ],
+        "Question": "Ban Chấp hành Đoàn Đại học gồm có bao nhiêu ban Chuyên môn?"
+      },
+      {
+        "Answer": [
+          "Số lượng tài liệu mượn tối đa: 8 cuốn (phòng 111); 5 cuốn (phòng 102). Thời gian mượn: 60 ngày (phòng 111); 30 ngày (phòng 102). Gia hạn: 30 ngày (phòng 111); 7 ngày (phòng 102).",
+          "Số lượng tài liệu mượn tối đa: 8 cuốn (phòng 111); 5 cuốn (phòng 102). Thời gian mượn: 60 ngày (phòng 111); 30 ngày (phòng 102). Gia hạn: 30 ngày (phòng 111); 7 ngày (phòng 102).",
+          "Số lượng tài liệu mượn tối đa: 8 cuốn (phòng 111); 5 cuốn (phòng 102). Thời gian mượn: 60 ngày (phòng 111); 30 ngày (phòng 102). Gia hạn: 30 ngày (phòng 111); 7 ngày (phòng 102)."
+        ],
+        "Question": "Chính sách mượn tài liệu của Thư viện là:"
+      },
+      {
+        "Answer": [
+          "GPA là điểm trung bình môn trong 1 học kỳ, CPA là điểm trung bình môn từ năm học thứ nhất"
+        ],
+        "Question": "GPA và CPA có nghĩa là gì ?"
       }
     ],
-    "Info": "Nội dung mô tả số 2",
-    "Name": "BÀI TEST PHẦN MỀM SỐ 2",
-    "Url": "https://forms.office.com/Pages/ResponsePage.aspx?id=n7jxBugHT0a0COwbRXA_MVvZ93rF6jhKrwsuguY1O_lUNUZaTDNEMVA4QVlaUzRJTU4yUEgwWUFWMy4u"
+    "Info": "<span>Nhằm mục tiêu giúp sinh viên nắm vững quy định, quy chế, Nhà trường đã tổ chức Tuần định hướng cho Sinh viên K69 và ban hành tài liệu Sổ tay sinh viên. Để đánh giá việc nắm vững các thông tin quan trọng phục vụ cho việc học tập tại Đại học Bách khoa Hà Nội, Nhà trường yêu cầu sinh viên hoàn thành bài kiểm tra quy chế.</span><br><br><span>Lưu ý: Các bạn có thể tìm kiếm câu trả lời cho mình trong tài liệu Sổ tay công tác sinh viên, các bài đăng chính thống trên website, và hỏi ý kiến trên các diễn đàn. Bạn chịu trách nhiệm với câu trả lời của bạn.</span><span><b><br></b></span><span style=\"color: rgb(203, 38, 19);\"><b>Bài kiểm tra sẽ kết thúc lúc 23h00 ngày 20/10/2024</b></span>",
+    "Name": "KIỂM TRA QUY CHẾ DÀNH CHO K69",
+    "Url": "https://forms.office.com/pages/responsepage.aspx?id=n7jxBugHT0a0COwbRXA_MYHyGUaEfhNNu2j97QvQaYlUQVdVOEk1TEdFOVVPRTEzTDBQM0ZUOTNVRy4u"
   }
 ]
