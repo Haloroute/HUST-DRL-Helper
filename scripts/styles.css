@@ -1,7 +1,7 @@
 ﻿body {
     font-family: Arial, sans-serif;
     padding: 15px;
-    width: 325px;
+    width: 350px;
     background-color: #f9f9f9; /* Đổi màu nền */
 }
 
@@ -24,28 +24,28 @@
     text-align: center; /* Căn giữa theo chiều ngang */
     line-height: 1.5; /* Đảm bảo các dòng chữ được căn giữa theo chiều dọc */
 }
-#quizLabel {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333; /* Darken color */
-}
-#infoLabel {    
-    margin-top: 10px;
-    font-size: 12px;
-    padding-left: 4px;
-    color: #333; /* Darken color */
-}
 #creditLabel {
     margin-top: 20px;
     font-size: 12px;
     color: #666; /* Adjust color */
 }
 
+.quizLabel {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Darken color */
+}
+.infoLabel {    
+    margin-top: 10px;
+    font-size: 12px;
+    padding-left: 4px;
+    color: #333; /* Darken color */
+}
+
 
 button {
     padding: 8px 16px;
-    margin: 0 0 10px 10px;
     font-size: 14px;
     border: none;
     border-radius: 4px;
@@ -53,10 +53,13 @@ button {
     transition: background-color 0.3s; /* Thêm transition */
 }
 .quizButton {
+    margin: 5px 0;
     color: #fff; /* Default text color */
+    width: 100%;
 }
-.align-right {
-    text-align: right; 
+#infoButton {
+    float: right;
+    margin: 5px 0 20px 0;
 }
 
 .goodEventButton {

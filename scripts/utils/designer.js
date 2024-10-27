@@ -50,16 +50,16 @@ function createQuizCell(name, info, id, eventJson) {
     thisCell.id = id;
 
     const thisQuizLabel = document.createElement('p');
-    thisQuizLabel.id = "quizLabel";
+    thisQuizLabel.classList.add("quizLabel");
     const thisQuizSpan = document.createElement('span');
-    thisQuizSpan.id = "quizSpan";
+    thisQuizSpan.classList.add("quizSpan");
     thisQuizSpan.textContent = name;
     thisQuizLabel.appendChild(thisQuizSpan);
 
     const thisInfoLabel = document.createElement('p');
-    thisInfoLabel.id = "infoLabel";
+    thisInfoLabel.classList.add("infoLabel");
     const thisInfoSpan = document.createElement('span');
-    thisInfoSpan.id = "infoSpan";
+    thisInfoSpan.classList.add("infoSpan");
     thisInfoSpan.textContent = info;
     thisInfoLabel.appendChild(thisInfoSpan);
 
