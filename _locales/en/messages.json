@@ -12,7 +12,7 @@
         "message": "You have opened Microsoft Forms",
         "description": "Notice when the user opens the extension while the current website is Microsoft Forms' quiz"
     },
-    "formsNotOpenedSLabel": {
+    "formsNotOpenedLabel": {
         "message": "You haven't opened Microsoft Forms",
         "description": "Notice when the user opens the extension while the current website isn't Microsoft Forms' quiz"
     },
@@ -70,5 +70,9 @@
     "disabledButton": {
         "message": "Cannot load answers",
         "description": "Text of the disabled button when the extension can't load answers into Microsoft Forms' quiz"
+    },
+    "infoButton": {
+        "message": "About Extension",
+        "description": "Text of the button that opens info popup"
     }
 }

@@ -12,7 +12,7 @@
         "message": "Bạn đã mở Microsoft Forms",
         "description": "Notice when user opens extension when the current website is Microsoft Forms' quiz"
     },
-    "formsNotOpenedSLabel": {
+    "formsNotOpenedLabel": {
         "message": "Bạn chưa mở Microsoft Forms",
         "description": "Notice when user opens extension when the current website isn't Microsoft Forms' quiz"
     },
@@ -70,5 +70,9 @@
     "disabledButton": {
         "message": "Không thể tải đáp án",
         "description": "Text of the disabled button when the extension can't load answer into Microsoft Forms' quiz"
+    },    
+    "infoButton": {
+        "message": "Thông tin Extension",
+        "description": "Text of the button that opens info popup"
     }
 }
