@@ -12,7 +12,7 @@ async function fetchData(url, type='json') {
         if (!response.ok) {
             throw new Error('Network response was not ok! Check your network connection and try again!');
         }
-        var data;
+        let data;
         if (type == 'json') {
             data = await response.json();
             console.log("Successfully received JSON data!");
@@ -26,4 +26,11 @@ async function fetchData(url, type='json') {
         console.log('with error: ', error);
         return null;
     }
+}
+
+function getCurrentLocale(localeList, default_locale, current_locale) {
+    current_locale = current_locale.replaceAll("-", "_");
+    if (localeList.includes(current_locale)) return current_locale;
+    else if (localeList.includes(current_locale.split("_")[0])) return current_locale.split("_")[0];
+    else return default_locale;
 }
