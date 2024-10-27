@@ -1,3 +1,9 @@
+const openFormsButton = chrome.i18n.getMessage('openFormsButton');
+const loadAnswerButton = chrome.i18n.getMessage('loadAnswerButton');
+const loadAnswerBETAButton = chrome.i18n.getMessage('loadAnswerBETAButton');
+const disabledButton = chrome.i18n.getMessage('disabledButton');
+
+
 function changeNotification(notification, color) {
     let checkUrlSpan = document.getElementById('checkUrlSpan');
 
@@ -12,32 +18,31 @@ function createQuizButton(eventId, eventArgs) {
     thisButton.classList.add('quizButton'); // Thêm class để tùy chỉnh CSS
 
     if (eventId == 0) {
-        thisButton.textContent = "Mở trang web";
+        thisButton.textContent = openFormsButton;
         thisButton.classList.add('badEventButton'); // Thêm class để tùy chỉnh CSS
 
         const thisEvent = clickBadEvent(eventArgs);
         thisButton.addEventListener('click', thisEvent);
     } else if (eventId == 1) {
-        thisButton.textContent = "Tải đáp án (cách 1, nên dùng)";
+        thisButton.textContent = loadAnswerButton;
         thisButton.classList.add('goodEventButton'); // Thêm class để tùy chỉnh CSS
 
         const thisEvent = clickGoodEventType1(eventArgs);
         thisButton.addEventListener('click', thisEvent);
     } else if (eventId == 2) {
-        thisButton.textContent = "Tải đáp án (cách 2, không nên dùng)";
+        thisButton.textContent = loadAnswerBETAButton;        
         thisButton.classList.add('goodEventButton'); // Thêm class để tùy chỉnh CSS
 
         const thisEvent = clickGoodEventType2(eventArgs);
         thisButton.addEventListener('click', thisEvent);
     } else if (eventId == -1) {
-        thisButton.textContent = "Không thể tải đáp án";
+        thisButton.textContent = disabledButton;
         thisButton.disabled = true;
         thisButton.classList.add('disabledButton'); // Thêm class để tùy chỉnh CSS
     }
 
     return thisButton;
 }
-
 
 function createQuizCell(name, info, id, eventJson) {
     const thisCell = document.createElement('div');
@@ -58,7 +63,6 @@ function createQuizCell(name, info, id, eventJson) {
     thisInfoSpan.textContent = info;
     thisInfoLabel.appendChild(thisInfoSpan);
 
-    // thisLabel.appendChild(document.createTextNode('Bài thi: '));
     thisCell.appendChild(thisQuizLabel);
     thisCell.appendChild(thisInfoLabel);
 

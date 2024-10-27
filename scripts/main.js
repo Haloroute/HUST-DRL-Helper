@@ -1,47 +1,60 @@
-﻿var manifestData = chrome.runtime.getManifest();
-var infoButton = document.getElementById('infoButton');
-var checkUrlSpan = document.getElementById('checkUrlSpan');
-var noticeSpan = document.getElementById('noticeSpan');
-var cellContainer = document.getElementById('cellContainer');
+﻿const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/answer.json";
+const noticeUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/notice.txt";
+const startUrl = "https://forms.office.com/pages/responsepage.aspx?id=";
+
+const manifestData = chrome.runtime.getManifest();
+const defaultLocale = manifestData.default_locale;
+const currentLocale = manifestData.current_locale;
+
+const infoButton = document.getElementById('infoButton');
+const noticeSpan = document.getElementById('noticeSpan');
+const cellContainer = document.getElementById('cellContainer');
+
+const formsOpenedLabel = chrome.i18n.getMessage('formsOpenedLabel');
+const formsNotOpenedLabel = chrome.i18n.getMessage('formsNotOpenedLabel');
+const noInternetLabel = chrome.i18n.getMessage('noInternetLabel');
+const versionInfo = chrome.i18n.getMessage('versionInfo', manifestData.version);
 
 
 function initialize(currentTab, answerJson) {    
-    var quizCount = answerJson.length;  
+    let quizCount = answerJson.length;  
 
     if (currentTab == undefined || !currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-        changeNotification("Bạn chưa mở Microsoft Forms", "#FF5733");
+        changeNotification(formsOpenedLabel, "#FF5733");
         console.log("Microsoft Forms website hasn't been opened yet");
     } else {
-        changeNotification("Bạn đã mở Microsoft Forms", "#4CAF50");
+        changeNotification(formsNotOpenedLabel, "#4CAF50");
         console.log("Microsoft Forms website has already been opened");       
     }
 
-    for (var q = 0; q < quizCount; ++q) {
+    for (let q = 0; q < quizCount; ++q) {
         console.log("Quiz: ", JSON.stringify(answerJson[q]));
         
-        var eventJson = [];
+        let eventJson = [];
         if (currentTab.url.toLowerCase().includes(answerJson[q].Url.toLowerCase())) {
             eventJson.push({ id: 1, args: answerJson[q].AnswerType1 });
             eventJson.push({ id: 2, args: answerJson[q].AnswerType2 });
         }
         else eventJson.push({ id: 0, args: answerJson[q].Url });
         
-        cellContainer.appendChild(createQuizCell(answerJson[q].Name, answerJson[q].Info, 'quiz' + q, eventJson));
-        console.log("Successfully initialized quiz: ", answerJson[q].Name);
+        let quizLocale = getCurrentLocale(Object.keys(answerJson[q].Metadata), defaultLocale, currentLocale);
+        cellContainer.appendChild(createQuizCell(answerJson[q].Metadata[quizLocale].Name, answerJson[q].Metadata[quizLocale].Info, 
+            'quiz' + q, eventJson));
+        console.log("Successfully initialized quiz: ", answerJson[q].Metadata[quizLocale].Name);
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', async function () {
-    var answerJson = await fetchData(answerUrl, 'json');
-    var noticeText = await fetchData(noticeUrl, 'text');
+    let answerJson = await fetchData(answerUrl, 'json');
+    let noticeJson = await fetchData(noticeUrl, 'json');
 
     if (answerJson == null) {
-        changeNotification("Không có kết nối internet", "#666");
+        changeNotification(noInternetLabel, "#666");
         alert('Error fetching data: ', error);
     }
     else {
-        noticeSpan.textContent = noticeText;          
+        let noticeLocale = getCurrentLocale(Object.keys(noticeJson), defaultLocale, currentLocale);
+        noticeSpan.textContent = noticeJson[noticeLocale];          
         let currentTab = await getCurrentTab();
         
         initialize(currentTab, answerJson);
@@ -49,6 +62,4 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 });
 
-infoButton.addEventListener('click', function() {
-    alert('Phiên bản: ' + manifestData.version + '\n\nLà một phần mềm của Nguyễn Quang Tuyến và "Sinh viên Vô danh".\nNguồn ảnh: flaticon.com.')
-});
+infoButton.addEventListener('click', function() { alert(versionInfo); });

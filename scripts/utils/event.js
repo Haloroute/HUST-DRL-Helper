@@ -1,11 +1,13 @@
-const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/answer.json";
-const noticeUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/notice.txt";
-const startUrl = "https://forms.office.com/pages/responsepage.aspx?id=";
+const newTabNotice = chrome.i18n.getMessage('newTabNotice');
+const notFoundQuizNotice = chrome.i18n.getMessage('notFoundQuizNotice');
+const successfulLoadAnswerNotice = chrome.i18n.getMessage('successfulLoadAnswerNotice');
+const failedLoadAnswerNotice = chrome.i18n.getMessage('failedLoadAnswerNotice');
+
 
 const clickBadEvent = (url) => (event) => {
     console.log("Click bad event!");
     console.log("Web: ", url);
-    alert("Sau khi tab mới xuất hiện thì hãy chuyển sang tab mới và click lại vào tiện ích này nhé!");
+    alert(newTabNotice);
     chrome.tabs.create({ url: url });
     console.log("Successfully completed bad event!");
 }
@@ -13,13 +15,14 @@ const clickBadEvent = (url) => (event) => {
 const clickGoodEventType1 = (answerJson) => async (event) => {    
     console.log("Click good event (type 1)!");
     console.log('Answer: ', answerJson);
-    if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
+
+    if (answerJson.length == 0) alert(notFoundQuizNotice);
     else {        
         let currentTab = await getCurrentTab(), counter = 0;
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/pages\/responsepage/i)) {
 
-            var formsId = currentTab.url.slice(startUrl.length).split("&")[0];
-            var storageId = "officeforms.answermap." + formsId;
+            let formsId = currentTab.url.slice(startUrl.length).split("&")[0];
+            let storageId = "officeforms.answermap." + formsId;
 
             chrome.scripting.executeScript({
                 target: { tabId: currentTab.id },
@@ -39,27 +42,27 @@ const clickGoodEventType1 = (answerJson) => async (event) => {
                 counter = result[0].result;
                 if (counter > 0) {
                     chrome.tabs.reload();
-                    alert("Đã thay thế " + counter + " khóa! Nếu kết quả không như mong muốn, hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!");
+                    alert(successfulLoadAnswerNotice);
                     console.log("Successfully completed good event (type 1)!");
                 } else {
-                    alert("Không tìm thấy khóa phù hợp! Hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!");
+                    alert(failedLoadAnswerNotice);
                     console.log("Not found necessary key-value pairs (type 1)!");
                 }
             });
 
         } else {
-            alert("Đây không phải là trang web Microsoft Forms!");
+            alert(formsNotOpenedLabel);
             console.log('Wrong website (type 1)!');
         }
     }
 
 }
 
-
 const clickGoodEventType2 = (answerJson) => async (event) => {    
     console.log("Click good event (type 2)!");
     console.log('Answer: ', answerJson);
-    if (answerJson.length == 0) alert("Không tìm thấy đáp án cho câu hỏi này! Hãy thử lại bằng cách khác!");
+
+    if (answerJson.length == 0) alert(notFoundQuizNotice);
     else {
         let currentTab = await getCurrentTab();
         if (currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
@@ -69,12 +72,12 @@ const clickGoodEventType2 = (answerJson) => async (event) => {
                 function: replaceValueType2,
                 args: [answerJson]
             }, () => {
-                alert("Đã thay thế đáp án khóa! Nếu không thấy sự thay đối, hãy kiểm tra lại địa chỉ website hoặc thử lại bằng cách khác!");
+                alert(successfulLoadAnswerNotice);
                 console.log("Successfully completed good event (type 2)!");
             });
 
-        } else {              
-            alert("Đây không phải là trang web Microsoft Forms!");
+        } else {  
+            alert(formsNotOpenedLabel);
             console.log('Wrong website (type 2)!');
         }
         

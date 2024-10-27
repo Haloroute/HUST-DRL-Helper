@@ -16,9 +16,9 @@ function generateStorageKeyValuePair() {
 }
 
 function replaceValueType1(startId, newValue) {
-    var counter = 0, localLength = localStorage.length, sessionLength = sessionStorage.length;
-    for (var p = 0; p < localLength; p++) {
-        var thisKey = localStorage.key(p);
+    let counter = 0, localLength = localStorage.length, sessionLength = sessionStorage.length;
+    for (let p = 0; p < localLength; p++) {
+        let thisKey = localStorage.key(p);
         console.log("Local Storage: " + thisKey);
         if (thisKey.startsWith(startId)) {
             localStorage.setItem(thisKey, newValue);
@@ -26,8 +26,8 @@ function replaceValueType1(startId, newValue) {
             counter++;
         }
     }
-    for (var p = 0; p < sessionLength; p++) {
-        var thisKey = sessionStorage.key(p);
+    for (let p = 0; p < sessionLength; p++) {
+        let thisKey = sessionStorage.key(p);
         console.log("Session Storage: " + thisKey);
         if (thisKey.startsWith(startId)) {
             sessionStorage.setItem(thisKey, newValue);
