@@ -14,16 +14,17 @@ const formsOpenedLabel = chrome.i18n.getMessage('formsOpenedLabel');
 const formsNotOpenedLabel = chrome.i18n.getMessage('formsNotOpenedLabel');
 const noInternetLabel = chrome.i18n.getMessage('noInternetLabel');
 const versionInfo = chrome.i18n.getMessage('versionInfo', manifestData.version);
+const infoButtonContent = chrome.i18n.getMessage('infoButton');
 
 
 function initialize(currentTab, answerJson) {    
     let quizCount = answerJson.length;  
 
     if (currentTab == undefined || !currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
-        changeNotification(formsOpenedLabel, "#FF5733");
+        changeNotification(formsNotOpenedLabel, "#FF5733");
         console.log("Microsoft Forms website hasn't been opened yet");
     } else {
-        changeNotification(formsNotOpenedLabel, "#4CAF50");
+        changeNotification(formsOpenedLabel, "#4CAF50");
         console.log("Microsoft Forms website has already been opened");       
     }
 
@@ -43,6 +44,8 @@ function initialize(currentTab, answerJson) {
         console.log("Successfully initialized quiz: ", answerJson[q].Metadata[quizLocale].Name);
     }
 }
+
+document.getElementById('infoButton').textContent = infoButtonContent;
 
 document.addEventListener('DOMContentLoaded', async function () {
     let answerJson = await fetchData(answerUrl, 'json');
