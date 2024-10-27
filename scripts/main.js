@@ -38,9 +38,11 @@ function initialize(currentTab, answerJson) {
         } else eventJson.push({ id: 0, args: answerJson[q].Url });
         
         let quizLocale = getCurrentLocale(Object.keys(answerJson[q].Metadata), defaultLocale, currentLocale);
-        cellContainer.appendChild(createQuizCell(answerJson[q].Metadata[quizLocale].Name, answerJson[q].Metadata[quizLocale].Info, 
-            'quiz' + q, eventJson));
-        console.log("Successfully initialized quiz: ", answerJson[q].Metadata[quizLocale].Name);
+        if (quizLocale != null) {
+            cellContainer.appendChild(createQuizCell(answerJson[q].Metadata[quizLocale].Name, answerJson[q].Metadata[quizLocale].Info, 
+                'quiz' + q, eventJson));
+            console.log("Successfully initialized quiz: ", answerJson[q].Metadata[quizLocale].Name);
+        }
     }
 }
 

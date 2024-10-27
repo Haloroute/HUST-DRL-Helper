@@ -32,5 +32,7 @@ function getCurrentLocale(localeList, default_locale, current_locale) {
     current_locale = current_locale.replaceAll("-", "_");
     if (localeList.includes(current_locale)) return current_locale;
     else if (localeList.includes(current_locale.split("_")[0])) return current_locale.split("_")[0];
-    else return default_locale;
+    else if (localeList.includes(default_locale)) return default_locale;
+    else if (localeList.length > 0) return localeList[0];
+    else return null;
 }
