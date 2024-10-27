@@ -3,7 +3,7 @@ async function getCurrentTab() {
     // `tab` will either be a `tabs.Tab` instance or `undefined`.
     let tabList = await chrome.tabs.query(queryOptions);
     if (tabList != undefined) return tabList[0];
-    else return undefined;
+    else return null;
 }
 
 async function fetchData(url, type='json') {

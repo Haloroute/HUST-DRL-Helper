@@ -20,7 +20,7 @@ const infoButtonContent = chrome.i18n.getMessage('infoButton');
 function initialize(currentTab, answerJson) {    
     let quizCount = answerJson.length;  
 
-    if (currentTab == undefined || !currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
+    if (currentTab == null || !currentTab.url.match(/https\:\/\/forms\.office\.com\/Pages\/ResponsePage/i)) {
         changeNotification(formsNotOpenedLabel, "#FF5733");
         console.log("Microsoft Forms website hasn't been opened yet");
     } else {
@@ -32,11 +32,10 @@ function initialize(currentTab, answerJson) {
         console.log("Quiz: ", JSON.stringify(answerJson[q]));
         
         let eventJson = [];
-        if (currentTab.url.toLowerCase().includes(answerJson[q].Url.toLowerCase())) {
+        if (currentTab != null && currentTab.url.toLowerCase().includes(answerJson[q].Url.toLowerCase())) {
             eventJson.push({ id: 1, args: answerJson[q].AnswerType1 });
             eventJson.push({ id: 2, args: answerJson[q].AnswerType2 });
-        }
-        else eventJson.push({ id: 0, args: answerJson[q].Url });
+        } else eventJson.push({ id: 0, args: answerJson[q].Url });
         
         let quizLocale = getCurrentLocale(Object.keys(answerJson[q].Metadata), defaultLocale, currentLocale);
         cellContainer.appendChild(createQuizCell(answerJson[q].Metadata[quizLocale].Name, answerJson[q].Metadata[quizLocale].Info, 
