@@ -1,0 +1,74 @@
+{
+    "extensionName": {
+        "message": "HUST DRL Helper",
+        "description": "Name of the extension"
+    },
+    "extensionDescription": {
+        "message": "Hỗ trợ lấy điểm rèn luyện trên Microsoft Form cho sinh viên HUST!",
+        "description": "Description of the extension"
+    },
+
+    "formsOpenedLabel": {
+        "message": "Bạn đã mở Microsoft Forms",
+        "description": "Notice when user opens extension when the current website is Microsoft Forms' quiz"
+    },
+    "formsNotOpenedSLabel": {
+        "message": "Bạn chưa mở Microsoft Forms",
+        "description": "Notice when user opens extension when the current website isn't Microsoft Forms' quiz"
+    },
+    "noInternetLabel": {
+        "message": "Không có kết nối internet",
+        "description": "Notice when there is no internet connection"
+    },
+
+    "versionInfo": {
+        "message": "Phiên bản: $VERSION$\n\nLà một phần mềm của $AUTHORNAME$ và 'Sinh viên vô danh'.\nNguồn ảnh: $IMAGESOURCE$.",
+        "description": "Info of the current version and credits",
+        "placeholders": {
+            "version": {
+                "content": "$1",
+                "example": "0.8.5"
+            },
+            "authorName": {
+                "content": "Nguyễn Quang Tuyến"
+            },
+            "imageSource": {
+                "content": "flaticon.com"
+            }
+        }
+    },
+
+    "newTabNotice": {
+        "message": "Sau khi tab mới xuất hiện thì hãy chuyển sang tab mới và mở lại tiện ích này nhé!",
+        "description": "Notice when users clicks button that opens Microsoft Forms' quiz in a new tab"
+    },
+    "notFoundQuizNotice": {
+        "message": "Không tìm thấy đáp án cho bài kiểm tra này!\nHãy kiểm tra lại địa chỉ website, hoặc thử lại bằng cách khác!",
+        "description": "Notice when the extension can't find the answer to load into the quiz"
+    },
+    "successfulLoadAnswerNotice": {
+        "message": "Thay đáp án thành công!\nNếu kết quả không như mong muốn, hãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!",
+        "description": "Notice when the extension loads the answer into the quiz successfully"
+    }, 
+    "failedLoadAnswerNotice": {
+        "message": "Thay đáp án thất bại!\nHãy kiểm tra lại địa chỉ website, chọn/nhập đáp án cho 1 câu hỏi bất kỳ, hoặc thử lại bằng cách khác!",
+        "description": "Notice when the extension is unable to load the answer into the quiz"
+    },
+
+    "openFormsButton": {
+        "message": "Mở trang web",
+        "description": "Text of the button that opens Microsoft Forms' quiz in a new tab"
+    },
+    "loadAnswerButton": {
+        "message": "Tải đáp án",
+        "description": "Text of the button that loads answer into Microsoft Forms' quiz"
+    },
+    "loadAnswerBETAButton": {
+        "message": "Tải đáp án (BETA, không khuyến nghị)",
+        "description": "Text of the button that loads answer into Microsoft Forms' quiz (BETA version, not recommend)"
+    },
+    "disabledButton": {
+        "message": "Không thể tải đáp án",
+        "description": "Text of the disabled button when the extension can't load answer into Microsoft Forms' quiz"
+    }
+}

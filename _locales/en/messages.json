@@ -1,0 +1,74 @@
+{
+    "extensionName": {
+        "message": "HUST DRL Helper",
+        "description": "Name of the extension"
+    },
+    "extensionDescription": {
+        "message": "Support retrieving self-assessment scores on Microsoft Forms for HUST students!",
+        "description": "Description of the extension"
+    },
+
+    "formsOpenedLabel": {
+        "message": "You have opened Microsoft Forms",
+        "description": "Notice when the user opens the extension while the current website is Microsoft Forms' quiz"
+    },
+    "formsNotOpenedSLabel": {
+        "message": "You haven't opened Microsoft Forms",
+        "description": "Notice when the user opens the extension while the current website isn't Microsoft Forms' quiz"
+    },
+    "noInternetLabel": {
+        "message": "No internet connection",
+        "description": "Notice when there is no internet connection"
+    },
+
+    "versionInfo": {
+        "message": "Version: $VERSION$\n\nA software by $AUTHORNAME$ and 'Anonymous Student'.\nImage source: $IMAGESOURCE$.",
+        "description": "Info of the current version and credits",
+        "placeholders": {
+            "version": {
+                "content": "$1",
+                "example": "0.8.5"
+            },
+            "authorName": {
+                "content": "Nguyễn Quang Tuyến"
+            },
+            "imageSource": {
+                "content": "flaticon.com"
+            }
+        }
+    },
+
+    "newTabNotice": {
+        "message": "After the new tab appears, switch to the new tab and reopen this extension!",
+        "description": "Notice when users click the button that opens Microsoft Forms' quiz in a new tab"
+    },
+    "notFoundQuizNotice": {
+        "message": "Cannot find the answers for this quiz!\nPlease check the website address, or try again with another method!",
+        "description": "Notice when the extension can't find the answer to load into the quiz"
+    },
+    "successfulLoadAnswerNotice": {
+        "message": "Answers loaded successfully!\nIf the result is not as expected, please check the website address, select/enter an answer for any question, or try again with another method!",
+        "description": "Notice when the extension loads the answer into the quiz successfully"
+    },
+    "failedLoadAnswerNotice": {
+        "message": "Failed to load answers!\nPlease check the website address, select/enter an answer for any question, or try again with another method!",
+        "description": "Notice when the extension is unable to load the answer into the quiz"
+    },
+
+    "openFormsButton": {
+        "message": "Open website",
+        "description": "Text of the button that opens Microsoft Forms' quiz in a new tab"
+    },
+    "loadAnswerButton": {
+        "message": "Load answers",
+        "description": "Text of the button that loads answers into Microsoft Forms' quiz"
+    },
+    "loadAnswerBETAButton": {
+        "message": "Load answers (BETA, not recommended)",
+        "description": "Text of the button that loads answers into Microsoft Forms' quiz (BETA version, not recommended)"
+    },
+    "disabledButton": {
+        "message": "Cannot load answers",
+        "description": "Text of the disabled button when the extension can't load answers into Microsoft Forms' quiz"
+    }
+}
