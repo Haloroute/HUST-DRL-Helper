@@ -10,6 +10,7 @@ const infoButton = document.getElementById('infoButton');
 const noticeSpan = document.getElementById('noticeSpan');
 const cellContainer = document.getElementById('cellContainer');
 
+const loadingLabel = chrome.i18n.getMessage('loadingLabel');
 const formsOpenedLabel = chrome.i18n.getMessage('formsOpenedLabel');
 const formsNotOpenedLabel = chrome.i18n.getMessage('formsNotOpenedLabel');
 const noInternetLabel = chrome.i18n.getMessage('noInternetLabel');
@@ -46,6 +47,7 @@ function initialize(currentTab, answerJson) {
     }
 }
 
+document.getElementById('checkUrlSpan').textContent = loadingLabel;     
 document.getElementById('infoButton').textContent = infoButtonContent;
 
 document.addEventListener('DOMContentLoaded', async function () {

@@ -8,6 +8,10 @@
         "description": "Description of the extension"
     },
 
+    "loadingLabel": {
+        "message": "Loading data...",
+        "description": "Notice when the extension is fetching data from server"
+    },
     "formsOpenedLabel": {
         "message": "You have opened Microsoft Forms",
         "description": "Notice when the user opens the extension while the current website is Microsoft Forms' quiz"

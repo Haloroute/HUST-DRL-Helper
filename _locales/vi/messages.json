@@ -8,6 +8,10 @@
         "description": "Description of the extension"
     },
 
+    "loadingLabel": {
+        "message": "Đang tải dữ liệu...",
+        "description": "Notice when the extension is fetching data from server"
+    },
     "formsOpenedLabel": {
         "message": "Bạn đã mở Microsoft Forms",
         "description": "Notice when user opens extension when the current website is Microsoft Forms' quiz"
@@ -72,7 +76,7 @@
         "description": "Text of the disabled button when the extension can't load answer into Microsoft Forms' quiz"
     },    
     "infoButton": {
-        "message": "Thông tin Extension",
+        "message": "Thông tin extension",
         "description": "Text of the button that opens info popup"
     }
 }
