@@ -2419,42 +2419,5 @@
       }
     },
     "Url": "https://forms.office.com/pages/responsepage.aspx?id=n7jxBugHT0a0COwbRXA_MYO4SQeeRuVOioM-6qetuu9UQlY4RFIzTUszV1NZREpHVkVITlE3SDhWRSQlQCNjPTEu&route=shorturl"
-  },
-  {
-    "AnswerType1": [
-      {
-        "Answer": "2",
-        "QuestionId": "r29e409cea61d4fcf832a994caeb7cb76"
-      },
-      {
-        "Answer": "AUG",
-        "QuestionId": "r92f207bb4ecf43e4b44061023003bca2"
-      }
-    ],
-    "AnswerType2": [
-      {
-        "Answer": [
-          "AUG"
-        ],
-        "Question": "What is the start codon for protein synthesis (for human)?"
-      },
-      {
-        "Answer": [
-          "2"
-        ],
-        "Question": "What is 1 + 1?"
-      }
-    ],
-    "Metadata": {
-      "en": {
-        "Info": "This is a sample Microsoft Forms, intended for staff at Microsoft to evaluate.",
-        "Name": "For Cerification"
-      },
-      "vi": {
-        "Info": "Đây là forms mẫu, dành cho nhân viên Microsoft để đánh giá tiện ích.",
-        "Name": "For Cerification"
-      }
-    },
-    "Url": "https://forms.office.com/pages/responsepage.aspx?id=n7jxBugHT0a0COwbRXA_MVvZ93rF6jhKrwsuguY1O_lUOVc5T0VSMTkyODhKRlVEWTRVMVZWOUhaSi4u&route=shorturl"
   }
 ]
