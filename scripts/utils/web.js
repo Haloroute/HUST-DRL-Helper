@@ -12,15 +12,18 @@ async function fetchData(url, type='json') {
         if (!response.ok) {
             throw new Error('Network response was not ok! Check your network connection and try again!');
         }
+
         let data;
         if (type == 'json') {
             data = await response.json();
-            console.log("Successfully received JSON data!");
+            console.log("Successfully received JSON data from: ", url);
         } else if (type == 'text') {
             data = await response.text();
-            console.log("Successfully received TEXT data!");
+            console.log("Successfully received TEXT data from: ", url);
         }
+
         return data;
+        
     } catch (error) {
         console.log('Error fetching data from: ', url);
         console.log('with error: ', error);
