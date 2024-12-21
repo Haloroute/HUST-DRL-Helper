@@ -24,11 +24,6 @@
     text-align: center; /* Căn giữa theo chiều ngang */
     line-height: 1.5; /* Đảm bảo các dòng chữ được căn giữa theo chiều dọc */
 }
-#creditLabel {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #666; /* Adjust color */
-}
 
 .quizLabel {
     margin-top: 10px;
