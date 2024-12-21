@@ -72,3 +72,12 @@ function createQuizCell(name, info, id, eventJson) {
     
     return thisCell;
 }
+
+function createNoticeCell(noticeLine) {
+    const thisNoticeLabel = document.createElement('p');
+    const thisNoticeSpan = document.createElement('span');
+    thisNoticeSpan.textContent = noticeLine;
+    thisNoticeLabel.appendChild(thisNoticeSpan);
+
+    return thisNoticeLabel;
+}
