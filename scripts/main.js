@@ -1,4 +1,4 @@
-﻿const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/answerV2.json";
+﻿const answerUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/answer.json";
 const noticeUrl = "https://raw.githubusercontent.com/Haloroute/HUST-DRL-Helper/master/documents/notice.json";
 const startUrl = "https://forms.office.com/pages/responsepage.aspx?id=";
 
